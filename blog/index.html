@@ -994,24 +994,24 @@
             </div>
           </article>
 
-          <!-- POST 3 - SUPLEMENTOS SOP -->
+          <!-- POST 3 -->
           <article class="post">
-            <div class="thumb thumb-photo" style="background-image:url('assets/img/suples.png');">
-              <span class="chip">SOP · SUPLEMENTACIÓN</span>
+            <div class="thumb">
+              <span class="chip">GRASA · ADHERENCIA</span>
             </div>
             <div class="post-body">
               <div class="post-meta">
-                <span class="tag">Suplementación</span>
-                <span class="tag">SOP</span>
+                <span class="tag">Pérdida de grasa</span>
+                <span class="tag">Hábitos</span>
                 <span>•</span>
-                <span>2026</span>
+                <span>08 feb 2026</span>
               </div>
-              <h4>Suplementos en SOP: cuándo suman y cuándo solo generan ruido</h4>
+              <h4>Errores comunes al intentar perder grasa (y por qué terminan frenando el progreso)</h4>
               <p>
-                La suplementación puede ser útil, pero solo cuando responde a un problema concreto dentro de una estrategia completa.
+                Déficit agresivo, baja adherencia, mal descanso y expectativas irreales: cómo corregirlos con estrategia.
               </p>
               <div class="post-actions">
-                <a class="link-btn" href="suplementos-sop.html">Leer más</a>
+                <a class="link-btn" href="#">Leer más</a>
                 <a class="link-btn" href="https://wa.me/5218132216529" target="_blank" rel="noopener">WhatsApp</a>
               </div>
             </div>
@@ -1085,7 +1085,6 @@
               </div>
             </div>
           </article>
-
         </div>
       </div>
     </section>
@@ -1437,7 +1436,7 @@
       <div>© <span id="year"></span> Pro Enhanced Nutrition · Blog</div>
       <div class="mono">
         <a href="../">Inicio</a> ·
-        <a href="/cdn-cgi/l/email-protection#5f0f2d30711a31373e313c3a3b71112a2b2d362b3630311f38323e3633713c3032">Correo</a> ·
+        <a href="mailto:Pro.Enhanced.Nutrition@gmail.com">Correo</a> ·
         <a href="https://www.instagram.com/raulvargas_proehn" target="_blank" rel="noopener">Instagram</a>
       </div>
     </footer>
@@ -1457,7 +1456,7 @@
     </svg>
   </a>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     /* =========================
        CONFIG GLOBAL
        Cambia tu número AQUÍ una sola vez
@@ -1478,4 +1477,12 @@
           const qs = u.search ? u.search : "";
 
           // Fuerza a /<numero> con el número global
-          a.href = `https://wa.me/${WHATSAPP_NUMBER}${q
+          a.href = `https://wa.me/${WHATSAPP_NUMBER}${qs}`;
+        }catch(e){
+          // Si por alguna razón no se puede parsear, no rompemos nada
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
