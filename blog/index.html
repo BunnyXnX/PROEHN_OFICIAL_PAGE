@@ -952,6 +952,81 @@
       .acc-toggle-icon { transition: none; }
     }
 
+    /* ── ACORDEÓN HEADER BLANCO (contraste) ── */
+
+    /* La card contenedora del artículo: fondo blanco */
+    details.art-accordion > summary {
+      background: linear-gradient(135deg, #ffffff, #f0f4ff);
+    }
+    details.art-accordion > summary:hover {
+      filter: none;
+      background: linear-gradient(135deg, #f5f8ff, #e8eeff);
+    }
+
+    /* article-head sobre fondo blanco: texto oscuro */
+    details.art-accordion > summary .article-head {
+      background: transparent;
+      border-bottom: none;
+    }
+    details.art-accordion > summary .article-head .kicker {
+      border-color: rgba(11,18,32,.14);
+      background: rgba(11,18,32,.06);
+      color: rgba(11,18,32,.88);
+    }
+    details.art-accordion > summary .article-head .kicker .dot {
+      background: linear-gradient(135deg, #ff6a00, #ff3ea5, #6a1b9a);
+    }
+    details.art-accordion > summary .article-head h2 {
+      color: #0b1220;
+      text-shadow: none;
+    }
+    details.art-accordion > summary .article-head .article-meta {
+      color: rgba(11,18,32,.60);
+    }
+    details.art-accordion > summary .article-head .tag {
+      border-color: rgba(11,18,32,.14);
+      background: rgba(11,18,32,.05);
+      color: rgba(11,18,32,.80);
+    }
+    details.art-accordion > summary .acc-hint {
+      color: rgba(11,18,32,.40);
+    }
+    details.art-accordion > summary:hover .acc-hint {
+      color: rgba(11,18,32,.60);
+    }
+
+    /* Columna del chevron sobre fondo blanco */
+    details.art-accordion > summary .acc-toggle {
+      background: rgba(11,18,32,.04);
+      border-left-color: rgba(11,18,32,.10);
+    }
+    details.art-accordion > summary:hover .acc-toggle {
+      background: rgba(11,18,32,.08);
+    }
+    .acc-toggle-icon {
+      border-color: rgba(11,18,32,.16);
+      background: rgba(11,18,32,.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,.10);
+    }
+    .acc-toggle-icon svg path {
+      stroke: rgba(11,18,32,.70);
+    }
+    details.art-accordion[open] > summary .acc-toggle-icon {
+      background: rgba(255,106,0,.12);
+      border-color: rgba(255,106,0,.35);
+    }
+    details.art-accordion[open] > summary .acc-toggle-icon svg path {
+      stroke: rgba(255,106,0,.90);
+    }
+
+    /* Separador visual entre header blanco y body oscuro */
+    details.art-accordion > summary {
+      border-bottom: 2px solid rgba(11,18,32,.08);
+    }
+    details.art-accordion[open] > summary {
+      border-bottom: 2px solid rgba(255,106,0,.20);
+    }
+
     /* ── INOSITOL: callout variantes ── */
     .callout.green{ border-color:rgba(57,255,20,.20); background:rgba(57,255,20,.06); }
     .callout.green strong{ color:rgba(57,255,20,.92); }
