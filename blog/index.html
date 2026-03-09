@@ -951,6 +951,44 @@
       details.art-accordion[open] > .acc-body-wrap { animation: none; }
       .acc-toggle-icon { transition: none; }
     }
+
+    /* ── INOSITOL: callout variantes ── */
+    .callout.green{ border-color:rgba(57,255,20,.20); background:rgba(57,255,20,.06); }
+    .callout.green strong{ color:rgba(57,255,20,.92); }
+    .callout.blue{ border-color:rgba(57,200,255,.20); background:rgba(57,200,255,.06); }
+    .callout.blue strong{ color:rgba(120,220,255,.95); }
+
+    /* ── INOSITOL: benefit cards ── */
+    .benefit-grid{ display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:14px 0; }
+    .benefit-card{
+      padding:14px; border-radius:16px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+      border-left:3px solid rgba(243,223,155,.45);
+      transition:.15s ease; transition-property:transform,border-color,box-shadow;
+    }
+    .benefit-card:hover{ transform:translateY(-2px); border-left-color:rgba(243,223,155,.8); box-shadow:0 12px 28px rgba(0,0,0,.20); }
+    .benefit-card .icon{ font-size:20px; margin-bottom:6px; }
+    .benefit-card h4{ margin:0 0 5px; font-size:13.5px; color:rgba(255,255,255,.95); }
+    .benefit-card p{ margin:0; font-size:12.5px; color:var(--muted); line-height:1.6; }
+
+    /* ── INOSITOL: dose table ── */
+    .dose-table{ width:100%; border-collapse:collapse; margin:14px 0; font-size:13px; }
+    .dose-table th{
+      padding:10px 12px; text-align:left;
+      background:rgba(243,223,155,.12); color:var(--gold2);
+      border-bottom:1px solid rgba(243,223,155,.18);
+      font-family:var(--mono); font-size:11px; letter-spacing:.4px;
+    }
+    .dose-table td{ padding:10px 12px; border-bottom:1px solid rgba(255,255,255,.07); color:var(--muted); vertical-align:top; line-height:1.6; }
+    .dose-table tr:last-child td{ border-bottom:none; }
+    .dose-table tr:hover td{ background:rgba(255,255,255,.04); }
+    .dose-table td strong{ color:rgba(255,255,255,.90); }
+    @media(max-width:680px){
+      .benefit-grid{ grid-template-columns:1fr; }
+      .dose-table{ font-size:11.5px; }
+      .dose-table th,.dose-table td{ padding:8px 7px; }
+    }
   </style>
 </head>
 <body>
@@ -1199,25 +1237,25 @@
             </div>
           </article>
 
-          <!-- POST 6 -->
+          <!-- POST 6 — INOSITOL -->
           <article class="post">
-            <div class="thumb">
-              <span class="chip">NUTRICIÓN · MENTAL</span>
+            <div class="thumb thumb-photo" style="background-image:url('assets/img/inositol.png');">
+              <span class="chip">SUPLEMENTACIÓN · EVIDENCIA</span>
             </div>
             <div class="post-body">
               <div class="post-meta">
-                <span class="tag">Nutrición</span>
-                <span class="tag">Salud mental</span>
+                <span class="tag">Inositol</span>
+                <span class="tag">SOP</span>
                 <span>•</span>
-                <span>01 feb 2026</span>
+                <span>2026</span>
               </div>
-              <h4>Nutrición y salud mental: ideas base para una introducción práctica</h4>
+              <h4>Inositol (Myo &amp; D-Chiro): beneficios, usos y dosis</h4>
               <p>
-                Excelente entrada para impulsar tu e-book y posicionarte con contenido educativo de alto valor.
+                Más allá del SOP: qué es, para qué sirve realmente, en qué dosis funciona y cuándo tiene sentido usarlo.
               </p>
               <div class="post-actions">
-                <a class="link-btn" href="#">Leer más</a>
-                <a class="link-btn" href="../#otros-productos">Ver e-book</a>
+                <a class="link-btn" href="#post-inositol-beneficios">Leer más</a>
+                <a class="link-btn" href="https://wa.me/5218132216529" target="_blank" rel="noopener">WhatsApp</a>
               </div>
             </div>
           </article>
@@ -1874,6 +1912,334 @@
             </div>
           </aside>
         </div>
+          </div><!-- /acc-body-wrap -->
+
+        </details>
+      </article>
+    </section>
+
+        <section id="post-inositol-beneficios">
+      <div class="section-head">
+        <h3><span class="mark"></span> Artículo completo</h3>
+        <p>Entrada #006 del blog</p>
+      </div>
+
+      <article class="card">
+        <details class="art-accordion">
+
+          <summary>
+        <div class="article-head">
+          <div class="kicker"><span class="dot"></span> SUPLEMENTACIÓN · EVIDENCIA</div>
+          <h2 class="gold-title">Inositol (Myo &amp; D-Chiro): beneficios, usos y dosis</h2>
+          <div class="article-meta">
+            <span class="tag">Inositol</span>
+            <span class="tag">Suplementación</span>
+            <span class="tag">Evidencia</span>
+            <span class="tag">SOP</span>
+            <span>•</span>
+            <span>2026</span>
+            <span>•</span>
+            <span>Lectura: 7–9 min</span>
+          </div>
+          <div class="acc-hint"><span class="hint-open">▾ Toca para leer el artículo completo</span><span class="hint-close">▴ Toca para cerrar</span></div>
+        </div>
+            <div class="acc-toggle" aria-hidden="true"><div class="acc-toggle-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 10l5 5 5-5" stroke="rgba(255,255,255,.85)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+          </summary>
+
+          <div class="acc-body-wrap">
+            <div class="featured-media" style="background-image:url('assets/img/inositol.png'); border-radius:0;"></div>
+        <div class="article-body">
+
+          <!-- PROSE -->
+          <div class="prose">
+
+            <h3>¿Qué es el inositol?</h3>
+            <p>
+              El inositol es un compuesto similar a las vitaminas del complejo B que el cuerpo produce de forma natural
+              y también obtenemos en pequeñas cantidades de los alimentos (frutas, legumbres, granos enteros).
+              No es una vitamina propiamente dicho, sino un <strong>poliol cíclico</strong> con funciones clave en la
+              señalización celular, especialmente en la vía de la insulina y en la regulación de neurotransmisores.
+            </p>
+            <p>
+              Existen 9 isómeros del inositol, pero los dos con mayor respaldo clínico son el
+              <strong>Myo-Inositol (MI)</strong> y el <strong>D-Chiro-Inositol (DCI)</strong>.
+              En el organismo la proporción fisiológica entre ambos es aproximadamente <strong>40:1 (MI:DCI)</strong>,
+              y replicar esa ratio en suplementación es lo que más evidencia acumula.
+            </p>
+
+            <div class="callout">
+              <p style="margin:0;">
+                <strong>Diferencia clave:</strong> el Myo-Inositol actúa principalmente en señalización hormonal
+                y ovulación; el D-Chiro-Inositol apoya la regulación de glucosa e insulina.
+                Juntos cubren más frentes que por separado.
+              </p>
+            </div>
+
+            <h3>Beneficios con respaldo de evidencia</h3>
+
+            <div class="benefit-grid">
+              <div class="benefit-card">
+                <div class="icon">🌸</div>
+                <h4>SOP y ciclos menstruales</h4>
+                <p>Mejora ovulación, regularidad del ciclo y reduce andrógenos circulantes en SOP.</p>
+              </div>
+              <div class="benefit-card">
+                <div class="icon">🍬</div>
+                <h4>Resistencia a la insulina</h4>
+                <p>Actúa como segundo mensajero de la insulina. Mejora sensibilidad y reduce hiperinsulinemia.</p>
+              </div>
+              <div class="benefit-card">
+                <div class="icon">🤰</div>
+                <h4>Diabetes gestacional</h4>
+                <p>Reduce incidencia en embarazadas de riesgo. Uno de los usos con más evidencia robusta.</p>
+              </div>
+              <div class="benefit-card">
+                <div class="icon">❤️</div>
+                <h4>Síndrome metabólico</h4>
+                <p>Mejora presión arterial, colesterol y sensibilidad insulínica en mujeres posmenopáusicas.</p>
+              </div>
+              <div class="benefit-card">
+                <div class="icon">🧠</div>
+                <h4>Ansiedad y depresión</h4>
+                <p>Modula serotonina y GABA. Estudios controlados muestran reducción de síntomas.</p>
+              </div>
+              <div class="benefit-card">
+                <div class="icon">🔁</div>
+                <h4>TOC (Trastorno obsesivo)</h4>
+                <p>Ensayos con dosis altas (18 g/día MI) mostraron reducción comparable a algunos fármacos.</p>
+              </div>
+            </div>
+
+            <h3>1. SOP: el uso más estudiado</h3>
+            <p>
+              En el SOP existe un <strong>defecto en la conversión de MI a DCI</strong> dentro de los ovarios,
+              lo que genera exceso de DCI intraovárico y déficit de MI. Esto altera la señalización de FSH
+              y empeora la calidad ovocitaria. La suplementación con la ratio 40:1 (MI:DCI) busca corregir
+              ese desequilibrio directamente en el tejido ovárico.
+            </p>
+            <ul>
+              <li>Regularización del ciclo menstrual en oligomenorrea.</li>
+              <li>Mejora de la calidad ovocitaria y tasas de ovulación espontánea.</li>
+              <li>Reducción de testosterona libre y LH elevadas.</li>
+              <li>Disminución de síntomas androgénicos (acné, hirsutismo) en combinación con plan nutricional.</li>
+              <li>Mejora de parámetros metabólicos: glucosa, insulina basal, HOMA-IR.</li>
+            </ul>
+
+            <div class="callout">
+              <p style="margin:0;">
+                <strong>Importante:</strong> el inositol no sustituye evaluación clínica ni plan nutricional.
+                Es coadyuvante. Sin el contexto correcto, el beneficio es marginal.
+              </p>
+            </div>
+
+            <h3>2. Resistencia a la insulina y diabetes tipo 2</h3>
+            <p>
+              El Myo-Inositol actúa como <strong>segundo mensajero intracelular de la insulina</strong>.
+              En condiciones de resistencia, este sistema está alterado. Suplementar MI puede mejorar la
+              transducción de señal insulínica sin depender solo de la cantidad de insulina circulante.
+            </p>
+            <ul>
+              <li>Mejora HOMA-IR en pacientes con RI documentada.</li>
+              <li>El DCI reduce la glucemia posprandial al retardar absorción de carbohidratos.</li>
+              <li>Sinergia con metformina documentada en algunos estudios (no reemplaza, complementa).</li>
+            </ul>
+
+            <h3>3. Diabetes gestacional</h3>
+            <p>
+              Es uno de los usos con <strong>evidencia más sólida y consistente</strong>. Múltiples ensayos
+              controlados muestran que el MI (2 g/día + 200 mcg ácido fólico) reduce significativamente
+              la incidencia de diabetes gestacional en mujeres con factores de riesgo (IMC elevado,
+              antecedente familiar, glucosa límite en primer trimestre).
+            </p>
+
+            <div class="callout green">
+              <p style="margin:0;">
+                <strong>Dato relevante:</strong> en varios ensayos europeos con mujeres de riesgo, el grupo
+                que tomó MI tuvo hasta un 60% menos de incidencia de DMG vs. placebo.
+              </p>
+            </div>
+
+            <h3>4. Síndrome metabólico</h3>
+            <p>
+              Un estudio de 6 meses con <strong>80 mujeres posmenopáusicas</strong> con síndrome metabólico
+              mostró que 4 g/día de MI mejoraron simultáneamente:
+            </p>
+            <ul>
+              <li>Sensibilidad a la insulina.</li>
+              <li>Presión arterial sistólica y diastólica.</li>
+              <li>Perfil lipídico (reducción LDL, aumento HDL).</li>
+              <li>Glucosa en ayuno.</li>
+            </ul>
+            <p>Este es el perfil de paciente donde el MI puede aportar más allá del contexto reproductivo.</p>
+
+            <h3>5. Salud mental: ansiedad, depresión y TOC</h3>
+            <p>
+              El inositol es precursor del <strong>sistema fosfoinositídico</strong>, un segundo mensajero
+              utilizado por receptores de serotonina (5-HT2), dopamina y GABA. A dosis altas actúa
+              como modulador de la neurotransmisión.
+            </p>
+            <ul>
+              <li><strong>Depresión:</strong> estudios con 12 g/día de MI mostraron resultados comparables a fluoxetina en algunos pacientes con depresión unipolar.</li>
+              <li><strong>TOC:</strong> 18 g/día redujo sintomatología en ensayos cruzados con placebo.</li>
+              <li><strong>Ansiedad y pánico:</strong> el MI parece reducir frecuencia e intensidad de ataques de pánico en algunos estudios.</li>
+              <li><strong>Propiedades antiinflamatorias cerebrales</strong> que protegen células gliales bajo estrés oxidativo.</li>
+            </ul>
+
+            <div class="callout blue">
+              <p style="margin:0;">
+                <strong>Contexto importante:</strong> estas dosis (12–18 g/día) son muy superiores a las
+                usadas en SOP (2–4 g/día). No usar dosis de salud mental para SOP ni viceversa.
+                Siempre bajo supervisión profesional en contexto psiquiátrico.
+              </p>
+            </div>
+
+            <h3>Dosis: cuánto usar y en qué forma</h3>
+            <p>La dosificación varía radicalmente según el objetivo. Resumen clínico basado en la evidencia disponible:</p>
+
+            <table class="dose-table">
+              <thead>
+                <tr>
+                  <th>Objetivo</th><th>Forma</th><th>Dosis diaria</th><th>Ratio MI:DCI</th><th>Notas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>SOP general</strong></td>
+                  <td>MI + DCI</td><td>4 g MI + 100 mg DCI</td><td>40:1</td>
+                  <td>Dividir en 2 tomas. Resultados en 3–6 meses.</td>
+                </tr>
+                <tr>
+                  <td><strong>Solo ovulación/ciclo</strong></td>
+                  <td>Myo-Inositol</td><td>2–4 g/día</td><td>Solo MI</td>
+                  <td>Toma única o dividida, preferiblemente en ayuno.</td>
+                </tr>
+                <tr>
+                  <td><strong>Resistencia a la insulina</strong></td>
+                  <td>MI ± DCI</td><td>2–4 g MI/día</td><td>40:1 o solo MI</td>
+                  <td>Siempre dentro de un plan nutricional estructurado.</td>
+                </tr>
+                <tr>
+                  <td><strong>Diabetes gestacional (prevención)</strong></td>
+                  <td>Myo-Inositol</td><td>2 g + 200 mcg ácido fólico</td><td>Solo MI</td>
+                  <td>Iniciar en el primer trimestre si hay riesgo.</td>
+                </tr>
+                <tr>
+                  <td><strong>Síndrome metabólico</strong></td>
+                  <td>Myo-Inositol</td><td>4 g/día</td><td>Solo MI</td>
+                  <td>Dividir en 2 tomas con comidas.</td>
+                </tr>
+                <tr>
+                  <td><strong>Depresión / ansiedad</strong></td>
+                  <td>Myo-Inositol</td><td>12 g/día</td><td>Solo MI</td>
+                  <td>Solo bajo supervisión psiquiátrica. No automedicarse.</td>
+                </tr>
+                <tr>
+                  <td><strong>TOC</strong></td>
+                  <td>Myo-Inositol</td><td>18 g/día</td><td>Solo MI</td>
+                  <td>Solo bajo supervisión psiquiátrica. Dosis muy alta.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>Formas de presentación</h3>
+            <ul>
+              <li><strong>Polvo:</strong> ideal para dosis de 4 g en adelante. Sabor neutro, se disuelve en agua.</li>
+              <li><strong>Cápsulas:</strong> cómodas para dosis de 2 g/día (SOP leve, mantenimiento).</li>
+              <li><strong>Fórmulas 40:1 premezcladas:</strong> prácticas pero más costosas. Verificar dosis total.</li>
+            </ul>
+
+            <div class="callout">
+              <p style="margin:0;">
+                <strong>Absorción:</strong> se recomienda tomar con el estómago vacío o 30 minutos antes
+                de las comidas para maximizar biodisponibilidad, especialmente el MI. El DCI puede
+                tomarse con alimentos sin perder eficacia significativa.
+              </p>
+            </div>
+
+            <h3>Seguridad y efectos adversos</h3>
+            <p>
+              El inositol tiene un perfil de seguridad muy bueno a dosis terapéuticas estándar (2–4 g/día).
+              A dosis altas (12–18 g/día) pueden aparecer efectos gastrointestinales temporales:
+            </p>
+            <ul>
+              <li>Náuseas leves al inicio (habitualmente desaparecen en 1–2 semanas).</li>
+              <li>Diarrea o heces blandas si se aumenta la dosis demasiado rápido.</li>
+              <li>Flatulencia leve.</li>
+            </ul>
+            <p>
+              <strong>No existen interacciones medicamentosas graves documentadas</strong>, pero si se
+              usa junto a metformina, antidiabéticos o psicofármacos, siempre informar al médico.
+            </p>
+
+            <h3>¿Cuándo NO tiene sentido usarlo?</h3>
+            <ul>
+              <li>Sin diagnóstico claro: usar inositol "por si acaso" sin evaluación no tiene base.</li>
+              <li>Como sustituto de cambios en nutrición y entrenamiento.</li>
+              <li>Esperando resultados en menos de 4–6 semanas (la mayoría de beneficios requieren tiempo).</li>
+              <li>Sin considerar la causa raíz del problema (el inositol no corrige un déficit de sueño, un déficit calórico excesivo ni una disfunción tiroidea no tratada).</li>
+            </ul>
+
+            <div class="callout green">
+              <p style="margin:0;">
+                <strong>Regla de oro:</strong> el inositol suma cuando el contexto está bien planteado.
+                Solo, sin estrategia, es gasto. Con estrategia, puede ser una herramienta muy poderosa.
+              </p>
+            </div>
+
+            <div style="margin-top:22px;padding:18px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;">
+              <strong style="font-size:15px;">¿Quieres saber si el inositol tiene sentido en tu caso?</strong>
+              <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                <a class="btn green" href="https://wa.me/5218132216529?text=Hola%20Ra%C3%BAl%2C%20le%C3%AD%20tu%20art%C3%ADculo%20sobre%20inositol%20y%20quiero%20una%20evaluaci%C3%B3n%20personalizada." target="_blank" rel="noopener">Pedir evaluación</a>
+                <a class="btn" href="#articulos">Ver más artículos</a>
+              </div>
+            </div>
+
+            <p class="small" style="margin-top:14px;"></p>
+          </div>
+
+          <!-- ASIDE -->
+          <aside>
+            <div class="mini-card">
+              <h4>TL;DR — Resumen rápido</h4>
+              <ul>
+                <li>MI actúa en señalización hormonal; DCI en glucosa/insulina.</li>
+                <li>Ratio 40:1 (MI:DCI) es la más respaldada para SOP.</li>
+                <li>Dosis varía según objetivo: 2 g (SOP leve) a 18 g (TOC).</li>
+                <li>Excelente perfil de seguridad a dosis estándar.</li>
+                <li>No reemplaza nutrición ni evaluación clínica.</li>
+              </ul>
+            </div>
+            <div class="mini-card">
+              <h4>Dosis rápida por objetivo</h4>
+              <ul>
+                <li><strong>SOP:</strong> 4 g MI + 100 mg DCI (40:1)</li>
+                <li><strong>DMG prevención:</strong> 2 g MI + ácido fólico</li>
+                <li><strong>Sínd. metabólico:</strong> 4 g MI/día</li>
+                <li><strong>Depresión:</strong> 12 g MI (supervisión)</li>
+                <li><strong>TOC:</strong> 18 g MI (supervisión)</li>
+              </ul>
+            </div>
+            <div class="mini-card">
+              <h4>Palabras clave (SEO)</h4>
+              <p>myo-inositol beneficios, d-chiro-inositol dosis, inositol SOP, inositol resistencia insulina, inositol ansiedad depresión, inositol diabetes gestacional.</p>
+            </div>
+            <div class="mini-card">
+              <h4>¿Te identificas con algún caso?</h4>
+              <p>Te oriento sobre si el inositol tiene sentido en tu situación específica:</p>
+              <div class="cta-stack">
+                <a class="btn green" href="https://wa.me/5218132216529?text=Hola%20Ra%C3%BAl%2C%20le%C3%AD%20el%20art%C3%ADculo%20de%20inositol%20y%20quiero%20saber%20si%20aplica%20en%20mi%20caso." target="_blank" rel="noopener">WhatsApp directo</a>
+                <a class="btn" href="../#servicios">Ver servicios</a>
+              </div>
+            </div>
+            <div class="disclaimer">
+              ⚠️ <strong>Disclaimer:</strong> Este contenido es informativo y médico-educativo.
+              No sustituye consulta médica ni diagnóstico profesional. Las dosis descritas
+              son orientativas basadas en la literatura; su uso debe individualizarse con
+              un profesional de salud.
+            </div>
+          </aside>
+
+        </div><!-- /article-body -->
           </div><!-- /acc-body-wrap -->
 
         </details>
