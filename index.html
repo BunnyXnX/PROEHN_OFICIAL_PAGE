@@ -1780,7 +1780,7 @@
 
         <p class="small" style="margin-top:14px">
           <span class="mono">Correo:</span>
-          <a href="/cdn-cgi/l/email-protection#99c9ebf6b7dcf7f1f8f7fafcfdb7d7ecedebf0edf0f6f7d9fef4f8f0f5b7faf6f4"><span class="__cf_email__" data-cfemail="065674692843686e676865636228487372746f726f696846616b676f6a2865696b">[email&#160;protected]</span></a>
+          <a href="mailto:proenhancednutritionelite@gmail.com">proenhancednutritionelite@gmail.com</a>
         </p>
 
         <div class="steps-wrap">
@@ -2787,7 +2787,7 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
 
             <div class="item gold-mirror" style="margin-top:10px">
               <h4 class="gold-stroke" style="margin:0 0 6px">3) Correo</h4>
-              <p style="margin:0"><a class="mono" href="/cdn-cgi/l/email-protection#c797b5a8e982a9afa6a9a4a2a3e989b2b3b5aeb3aea8a987a0aaa6aeabe9a4a8aa"><span class="__cf_email__" data-cfemail="5d0d2f32731833353c333e3839731328292f34293432331d3a303c3431733e3230">[email&#160;protected]</span></a></p>
+              <p style="margin:0"><a class="mono" href="mailto:proenhancednutritionelite@gmail.com">proenhancednutritionelite@gmail.com</a></p>
             </div>
           </div>
         </div>
@@ -2848,7 +2848,7 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
         <div class="mono">
           <a href="https://wa.me/5218132216529" target="_blank" rel="noopener">WhatsApp</a> ·
           <a href="https://www.instagram.com/raulvargas_proehn" target="_blank" rel="noopener">Instagram</a> ·
-          <a href="/cdn-cgi/l/email-protection#4d1d3f22630823252c232e2829630338393f24392422230d2a202c2421632e2220">Correo</a>
+          <a href="mailto:proenhancednutritionelite@gmail.com">Correo</a>
         </div>
       </div>
     </section>
@@ -2856,7 +2856,7 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
     <a href="https://www.instagram.com/raulvargas_proehn" class="float-ig float-pulse" target="_blank" rel="noopener" title="Instagram">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm10.35 1.55a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Z"/></svg>
     </a>
-    <a href="/cdn-cgi/l/email-protection#efbf9d80c1aa81878e818c8a8bc1a19a9b9d869b868081af88828e8683c18c8082" class="float-mail float-pulse" title="Enviar correo">
+    <a href="mailto:proenhancednutritionelite@gmail.com" class="float-mail float-pulse" title="Enviar correo">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.23l9 6.43 9-6.43V7H3Zm18 10V9.77l-8.42 6.01a1 1 0 0 1-1.16 0L3 9.77V17h18Z"/></svg>
     </a>
     <a href="https://wa.me/5218132216529" class="float-wa float-pulse" target="_blank" rel="noopener" title="WhatsApp">
@@ -2865,7 +2865,7 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
   </div>
 </main>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     /* =========================
        CONFIG GLOBAL
        Cambia tu número AQUÍ una sola vez
@@ -2901,4 +2901,16 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
       const msg = document.getElementById("msg").value.trim();
 
       const subject = encodeURIComponent("Contacto — Pro Enhanced Nutrition (" + name + ")");
-      const body = encodeURIComponent(`Nombre: ${name}\nCorreo: ${email}\n\nM
+      const body = encodeURIComponent(
+        `Nombre: ${name}
+Correo: ${email}
+
+Mensaje:
+${msg}`
+      );
+
+      window.location.href = `mailto:proenhancednutritionelite@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
