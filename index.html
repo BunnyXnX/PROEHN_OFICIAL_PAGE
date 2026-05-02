@@ -1722,7 +1722,1342 @@
   }
 }
 
-</style>
+
+
+/* =========================================================
+   PRO EHN · BLACK GOLD MEDICAL PREMIUM EDITION
+   Capa visual agregada sin modificar estructura ni JS.
+   ========================================================= */
+:root{
+  --bg0:#050607 !important;
+  --bg1:#0a0d10 !important;
+  --bg2:#111820 !important;
+  --text:#f8fafc !important;
+  --muted:rgba(226,232,240,.76) !important;
+  --pink:#d8b25a !important;
+  --fire:#c99b3f !important;
+  --fire2:#f1d98a !important;
+  --orange2:#b9852b !important;
+  --gold:#d7b35d !important;
+  --gold2:#fff0b8 !important;
+  --lineOrange:rgba(215,179,93,.18) !important;
+  --lineOrange2:rgba(255,240,184,.10) !important;
+  --shadow:0 30px 90px rgba(0,0,0,.62) !important;
+  --shadow2:0 22px 58px rgba(0,0,0,.48) !important;
+}
+html{background:#050607 !important;}
+body{
+  color:#f8fafc !important;
+  background:
+    radial-gradient(900px 520px at 10% -5%, rgba(255,240,184,.14), transparent 62%),
+    radial-gradient(760px 480px at 92% 4%, rgba(120,92,36,.24), transparent 65%),
+    radial-gradient(900px 620px at 52% 110%, rgba(33,47,58,.54), transparent 65%),
+    linear-gradient(180deg,#050607 0%,#090c0f 42%,#101821 100%) !important;
+  position:relative;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255,255,255,.018) 1px, transparent 1px),
+    radial-gradient(circle at 50% 0%, rgba(215,179,93,.10), transparent 34%);
+  background-size:64px 64px,64px 64px,100% 100%;
+  mask-image:linear-gradient(180deg, rgba(0,0,0,.85), rgba(0,0,0,.25));
+}
+.nav{
+  background:linear-gradient(180deg,rgba(5,6,7,.92),rgba(8,11,14,.76)) !important;
+  border-bottom:1px solid rgba(215,179,93,.30) !important;
+  box-shadow:0 18px 50px rgba(0,0,0,.35) !important;
+}
+.badge{
+  color:#090a0b !important;
+  background:linear-gradient(135deg,#fff3bd 0%,#d8b25a 45%,#8b6421 100%) !important;
+  border:1px solid rgba(255,240,184,.60) !important;
+  box-shadow:0 16px 34px rgba(0,0,0,.42),0 0 26px rgba(215,179,93,.22) !important;
+}
+.brand h1,.brand p{color:#f8fafc !important;}
+.brand p{color:rgba(226,232,240,.76) !important;}
+.pill,.cta,.btn{
+  background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(215,179,93,.075)) !important;
+  border:1px solid rgba(215,179,93,.32) !important;
+  color:#f8fafc !important;
+  box-shadow:0 14px 34px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.08) !important;
+}
+.pill:hover,.cta:hover,.btn:hover{
+  background:linear-gradient(135deg,rgba(255,240,184,.15),rgba(215,179,93,.12),rgba(255,255,255,.06)) !important;
+  border-color:rgba(255,240,184,.58) !important;
+  box-shadow:0 22px 58px rgba(0,0,0,.48),0 0 30px rgba(215,179,93,.14) !important;
+}
+.btn.primary,.cta{
+  color:#08090a !important;
+  background:linear-gradient(135deg,#fff4bd 0%,#d8b25a 45%,#936b24 100%) !important;
+  text-shadow:0 1px 0 rgba(255,255,255,.18) !important;
+  border-color:rgba(255,240,184,.70) !important;
+}
+.btn.green,.btn.community,.btn.vip,.btn.ebook,.btn.plan-green{
+  background:linear-gradient(135deg,rgba(19,42,33,.92),rgba(215,179,93,.14)) !important;
+  border-color:rgba(215,179,93,.45) !important;
+  color:#fff7cf !important;
+  box-shadow:0 18px 46px rgba(0,0,0,.42),0 0 0 1px rgba(215,179,93,.10) inset !important;
+}
+.card,.service-card,.mini,.item,.service-sub,.acc-wrap,details.accordion,.results-card,.step-card{
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.078),rgba(255,255,255,.035)),
+    radial-gradient(640px 220px at 20% 0%,rgba(215,179,93,.10),transparent 58%) !important;
+  border:1px solid rgba(215,179,93,.26) !important;
+  border-top-color:rgba(255,240,184,.36) !important;
+  border-left-color:rgba(215,179,93,.24) !important;
+  box-shadow:0 24px 72px rgba(0,0,0,.46), inset 0 1px 0 rgba(255,255,255,.07) !important;
+  backdrop-filter:blur(16px) saturate(1.05) !important;
+  -webkit-backdrop-filter:blur(16px) saturate(1.05) !important;
+}
+.card:hover,.service-card:hover,.mini:hover,.item:hover,.service-sub:hover,.acc-wrap:hover,.step-card:hover{
+  box-shadow:0 32px 92px rgba(0,0,0,.56),0 0 38px rgba(215,179,93,.12) !important;
+  border-color:rgba(255,240,184,.45) !important;
+}
+.gold-mirror{
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.035)),
+    radial-gradient(760px 260px at 18% 0%,rgba(255,240,184,.12),transparent 58%),
+    linear-gradient(135deg,rgba(12,15,18,.96),rgba(20,27,34,.88)) !important;
+  border-color:rgba(215,179,93,.38) !important;
+}
+.gold-mirror::before{
+  background:linear-gradient(135deg,rgba(255,240,184,.14),rgba(215,179,93,.08),rgba(255,255,255,.02),rgba(215,179,93,.12)) !important;
+}
+.hero-main{
+  background:
+    radial-gradient(720px 300px at 0% 0%,rgba(255,240,184,.14),transparent 62%),
+    radial-gradient(580px 280px at 100% 20%,rgba(79,98,110,.16),transparent 62%) !important;
+}
+.hero h2{
+  color:#fff7df !important;
+  text-shadow:0 18px 38px rgba(0,0,0,.78),0 0 28px rgba(215,179,93,.14) !important;
+}
+.hero p,.service-desc,.service-sub p,.small,.section-title p,.mini .t,.step-desc,.acc-sub,.shot .cap2{color:rgba(226,232,240,.78) !important;}
+.kicker,.tag,.service-badge{
+  background:rgba(215,179,93,.10) !important;
+  border-color:rgba(215,179,93,.38) !important;
+  color:#fff1bd !important;
+}
+.kicker .dot,.section-title h3 .mark{
+  background:linear-gradient(135deg,#fff0b8,#d8b25a,#8b6421) !important;
+  box-shadow:0 0 0 5px rgba(215,179,93,.13),0 0 18px rgba(215,179,93,.28) !important;
+}
+.section-title h3{
+  color:#fff4c7 !important;
+  letter-spacing:.15px !important;
+}
+.divider{
+  background:linear-gradient(90deg,transparent,rgba(255,240,184,.38),rgba(215,179,93,.35),transparent) !important;
+}
+.photo,.photo-img,.product-banner,.community-banner,.youtube-banner,.podcast-banner,.plan-banner,.diploma-img,.vip-banner,.shot{
+  background:
+    radial-gradient(680px 260px at 22% 0%,rgba(255,240,184,.13),transparent 62%),
+    radial-gradient(620px 260px at 86% 100%,rgba(215,179,93,.10),transparent 60%),
+    linear-gradient(135deg,rgba(9,11,13,.96),rgba(20,27,34,.92)) !important;
+  border-color:rgba(215,179,93,.36) !important;
+  box-shadow:0 24px 70px rgba(0,0,0,.50) !important;
+}
+.cap,.step-num{
+  color:#08090a !important;
+  background:linear-gradient(135deg,#fff3bd,#d8b25a,#9a7027) !important;
+  border-color:rgba(255,240,184,.65) !important;
+}
+.ebook-price,.vip-title{
+  color:#fff3bd !important;
+  text-shadow:0 0 16px rgba(215,179,93,.26),0 16px 32px rgba(0,0,0,.68) !important;
+}
+input,textarea{
+  background:rgba(255,255,255,.06) !important;
+  border-color:rgba(215,179,93,.28) !important;
+  color:#f8fafc !important;
+}
+input:focus,textarea:focus{
+  border-color:rgba(255,240,184,.58) !important;
+  box-shadow:0 0 0 4px rgba(215,179,93,.14),0 18px 44px rgba(0,0,0,.32) !important;
+}
+details.accordion summary{
+  background:linear-gradient(135deg,rgba(255,240,184,.13),rgba(255,255,255,.045),rgba(215,179,93,.09)) !important;
+  border-bottom:1px solid rgba(215,179,93,.22) !important;
+}
+.acc-title{color:#fff6d3 !important;}
+.acc-arrow{
+  background:rgba(215,179,93,.09) !important;
+  border-color:rgba(215,179,93,.30) !important;
+}
+.cv-card,.cv-wrap,details.accordion.cv-accordion{
+  background:linear-gradient(180deg,rgba(247,250,252,.96),rgba(232,238,244,.93)) !important;
+  border-color:rgba(215,179,93,.34) !important;
+  color:#071017 !important;
+}
+details.accordion.cv-accordion summary{
+  background:linear-gradient(135deg,#fff6d1,#f2e2a6,#e7eef4) !important;
+}
+.float-dock a,.ig-float,.wa-float{
+  border-color:rgba(255,240,184,.42) !important;
+  box-shadow:0 22px 52px rgba(0,0,0,.46),0 0 0 1px rgba(215,179,93,.12) inset !important;
+}
+.float-ig,.ig-float{
+  background:linear-gradient(135deg,#0a0d10,#d8b25a,#fff0b8) !important;
+}
+.float-mail{
+  background:linear-gradient(135deg,#090b0d,#b9852b,#fff0b8) !important;
+}
+.float-wa,.wa-float{
+  background:linear-gradient(135deg,#06130e,#1f6f50,#d8b25a) !important;
+}
+.yellow-box{
+  background:linear-gradient(135deg,#fff7c4,#e6c66c) !important;
+  border:1px solid rgba(0,0,0,.18) !important;
+}
+.footer{
+  border-top-color:rgba(215,179,93,.22) !important;
+  color:rgba(226,232,240,.72) !important;
+}
+::selection{background:rgba(215,179,93,.38);color:#fff;}
+@media (max-width:780px){
+  .links{background:rgba(5,6,7,.62) !important;border-color:rgba(215,179,93,.22) !important;}
+}
+
+
+/* === CV NIVEL PAPER CLÍNICO · BLACK GOLD MEDICAL === */
+#formacion .cv-card{
+  background: linear-gradient(180deg, #fdfdfb 0%, #f6f1e7 100%) !important;
+  border: 1px solid rgba(212,175,55,.36) !important;
+  box-shadow: 0 26px 80px rgba(0,0,0,.30), 0 0 0 1px rgba(255,255,255,.18) inset !important;
+}
+#formacion .cv-wrap{
+  background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(250,247,239,.94)) !important;
+  border: 1px solid rgba(15,23,42,.10) !important;
+  box-shadow: 0 18px 48px rgba(0,0,0,.16) !important;
+}
+#formacion details.cv-accordion{
+  background:#fffaf0 !important;
+  border:1px solid rgba(184,134,11,.32) !important;
+}
+#formacion details.cv-accordion summary{
+  background:
+    linear-gradient(135deg, rgba(11,18,32,.96), rgba(25,25,25,.94) 48%, rgba(89,64,20,.92)) !important;
+  border-bottom:1px solid rgba(212,175,55,.36) !important;
+}
+#formacion details.cv-accordion .acc-title{
+  color:#f8e7b1 !important;
+  text-shadow:0 10px 24px rgba(0,0,0,.45) !important;
+  letter-spacing:.3px;
+}
+#formacion details.cv-accordion .acc-sub{
+  color:rgba(255,255,255,.72) !important;
+}
+#formacion details.cv-accordion .acc-arrow{
+  background:rgba(212,175,55,.12) !important;
+  border-color:rgba(212,175,55,.35) !important;
+}
+#formacion details.cv-accordion .acc-arrow svg path{
+  stroke:#f8e7b1 !important;
+}
+#formacion .cv-paper-body{
+  background:linear-gradient(180deg,#ffffff 0%,#fbf7ee 100%) !important;
+  color:#111827 !important;
+  padding:0 !important;
+  white-space:normal !important;
+}
+#formacion .cv-paper,
+#formacion .cv-paper *{
+  color:#111827 !important;
+  text-shadow:none !important;
+}
+#formacion .cv-paper{
+  padding:26px;
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height:1.72;
+}
+#formacion .cv-paper-hero{
+  position:relative;
+  padding:28px;
+  border-radius:20px;
+  overflow:hidden;
+  background:
+    radial-gradient(700px 260px at 8% 0%, rgba(212,175,55,.22), transparent 60%),
+    linear-gradient(135deg,#0b1220 0%,#171717 55%,#3a2b0f 100%);
+  border:1px solid rgba(212,175,55,.38);
+  box-shadow:0 22px 56px rgba(0,0,0,.22);
+}
+#formacion .cv-paper-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg, transparent 0%, rgba(255,255,255,.12) 22%, transparent 42%);
+  pointer-events:none;
+}
+#formacion .cv-paper-kicker{
+  position:relative; z-index:1;
+  display:inline-flex;
+  padding:7px 10px;
+  border-radius:999px;
+  border:1px solid rgba(248,231,177,.36);
+  color:#f8e7b1 !important;
+  font:700 11px/1 var(--mono);
+  letter-spacing:.9px;
+  text-transform:uppercase;
+  background:rgba(255,255,255,.06);
+}
+#formacion .cv-paper-hero h4{
+  position:relative; z-index:1;
+  margin:14px 0 6px;
+  font-size:32px;
+  line-height:1.12;
+  letter-spacing:-.4px;
+  color:#fffaf0 !important;
+}
+#formacion .cv-paper-hero p{
+  position:relative; z-index:1;
+  margin:0;
+  color:rgba(255,255,255,.78) !important;
+  font-family:var(--sans);
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+}
+#formacion .cv-paper-chips{
+  position:relative; z-index:1;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:16px;
+}
+#formacion .cv-paper-chips span{
+  color:#f8e7b1 !important;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(248,231,177,.22);
+  border-radius:999px;
+  padding:8px 10px;
+  font:800 12px/1 var(--sans);
+}
+#formacion .cv-paper-abstract{
+  margin:18px 0;
+  padding:18px 20px;
+  border-left:5px solid #b8860b;
+  background:linear-gradient(180deg,#fffdf8,#f7efe0);
+  border-radius:16px;
+  box-shadow:0 12px 28px rgba(0,0,0,.08);
+}
+#formacion .cv-paper-label{
+  font:900 12px/1 var(--mono);
+  letter-spacing:.9px;
+  text-transform:uppercase;
+  color:#6b4b00 !important;
+  margin-bottom:8px;
+}
+#formacion .cv-paper-abstract p{
+  margin:0;
+  font-size:15.5px;
+}
+#formacion .cv-paper-grid{
+  display:grid;
+  grid-template-columns: .95fr 1.05fr;
+  gap:16px;
+}
+#formacion .cv-paper-block{
+  background:#ffffff;
+  border:1px solid rgba(15,23,42,.10);
+  border-top:4px solid #d4af37;
+  border-radius:18px;
+  padding:18px 20px;
+  box-shadow:0 14px 34px rgba(0,0,0,.08);
+  margin-bottom:16px;
+}
+#formacion .cv-paper-block h5{
+  margin:0 0 12px;
+  font-family:var(--sans);
+  font-size:14px;
+  letter-spacing:.7px;
+  text-transform:uppercase;
+  color:#0b1220 !important;
+  border-bottom:1px solid rgba(15,23,42,.10);
+  padding-bottom:10px;
+}
+#formacion .cv-paper-block ul{
+  margin:0;
+  padding-left:20px;
+}
+#formacion .cv-paper-block li{
+  margin:0 0 10px;
+  padding-left:4px;
+  font-size:14.5px;
+}
+#formacion .cv-paper-block li::marker{
+  color:#b8860b;
+}
+#formacion .cv-paper-wide{
+  margin-top:0;
+}
+#formacion .cv-raw-source{
+  margin-top:4px;
+  border:1px dashed rgba(15,23,42,.22);
+  border-radius:14px;
+  background:#fbfaf7;
+  overflow:hidden;
+}
+#formacion .cv-raw-source summary{
+  cursor:pointer;
+  padding:12px 14px;
+  color:#d4af37 !important;
+  background:linear-gradient(135deg,#0b1220,#171717 58%,#3a2b0f) !important;
+  font:900 13px/1 var(--sans);
+  letter-spacing:.35px;
+  text-transform:uppercase;
+  border-bottom:1px solid rgba(212,175,55,.28);
+  text-shadow:0 0 14px rgba(212,175,55,.18), 0 10px 24px rgba(0,0,0,.42) !important;
+}
+#formacion .cv-raw-source summary:hover{
+  color:#f8e7b1 !important;
+  background:linear-gradient(135deg,#101827,#1c1c1c 58%,#4a3714) !important;
+}
+#formacion .cv-raw-source .cv-text{
+  margin:0;
+  padding:16px;
+  white-space:pre-wrap;
+  color:#111827 !important;
+  font-family:var(--sans);
+  font-size:14px;
+}
+@media(max-width:900px){
+  #formacion .cv-paper-grid{grid-template-columns:1fr;}
+  #formacion .cv-paper{padding:18px;}
+  #formacion .cv-paper-hero{padding:22px;}
+  #formacion .cv-paper-hero h4{font-size:26px;}
+}
+
+  
+
+/* =========================================================
+   PRO EHN · AJUSTE GLOBAL MÁS CLARO · BLACK GOLD MEDICAL v8
+   - Conserva estructura, funciones y enlaces
+   - Aclara fondos, mejora contraste y mantiene dorado premium
+========================================================= */
+:root{
+  --bg0:#342a24 !important;
+  --bg1:#4a3b2f !important;
+  --bg2:#70583b !important;
+  --text:#fffaf0 !important;
+  --muted:rgba(255,250,240,.82) !important;
+  --gold:#d9b45f !important;
+  --gold2:#fff0b8 !important;
+  --pink:#d8b25a !important;
+  --fire:#d9b45f !important;
+  --fire2:#c89636 !important;
+  --orange2:#e4bd68 !important;
+}
+
+body{
+  color:var(--text) !important;
+  background:
+    radial-gradient(1100px 650px at 10% -6%, rgba(255,239,184,.18), transparent 62%),
+    radial-gradient(980px 640px at 90% 5%, rgba(216,178,90,.18), transparent 64%),
+    radial-gradient(980px 580px at 50% 112%, rgba(255,255,255,.08), transparent 66%),
+    linear-gradient(180deg, #3b3029 0%, #4c3d31 42%, #6b5439 100%) !important;
+}
+
+.nav{
+  background:rgba(62,50,40,.74) !important;
+  border-bottom:1px solid rgba(255,239,184,.18) !important;
+  box-shadow:0 12px 36px rgba(0,0,0,.18) !important;
+}
+
+.card,
+.service-card,
+.results-card,
+.hero-main,
+.hero-side,
+.photo,
+.item,
+.mini,
+.service-sub,
+.acc-wrap,
+.step-card{
+  background:rgba(255,255,255,.105) !important;
+  border-color:rgba(255,239,184,.22) !important;
+  box-shadow:0 18px 48px rgba(0,0,0,.22) !important;
+}
+
+.gold-mirror::before{
+  background:linear-gradient(135deg,
+    rgba(255,240,184,.18) 0%,
+    rgba(216,178,90,.14) 28%,
+    rgba(255,255,255,.07) 52%,
+    rgba(216,178,90,.13) 76%,
+    rgba(255,240,184,.20) 100%) !important;
+  opacity:.96 !important;
+}
+.gold-mirror::after{
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.18), transparent 38%),
+    radial-gradient(900px 260px at 18% 0%, rgba(255,240,184,.22), transparent 60%),
+    radial-gradient(900px 260px at 85% 8%, rgba(216,178,90,.16), transparent 62%),
+    linear-gradient(120deg, transparent 0%, rgba(255,240,184,.14) 18%, rgba(255,255,255,.09) 34%, transparent 55%) !important;
+}
+
+.hero h2,
+.section-title h3,
+.brand h1,
+.service-title,
+.ghost .big{
+  color:#fff7df !important;
+  text-shadow:0 10px 28px rgba(0,0,0,.38) !important;
+}
+
+.hero p,
+.service-desc,
+.small,
+.brand p,
+.section-title p,
+.mini .t,
+.step-desc,
+.service-sub p,
+.acc-sub,
+.acc-body{
+  color:rgba(255,250,240,.84) !important;
+}
+
+.kicker,
+.tag,
+.service-badge,
+.pill,
+.cta,
+.btn,
+input,
+textarea{
+  background:rgba(255,255,255,.12) !important;
+  border-color:rgba(255,239,184,.24) !important;
+  color:#fff8e6 !important;
+}
+
+.btn.primary,
+.cta,
+.badge{
+  background:linear-gradient(135deg, rgba(255,240,184,.25), rgba(216,178,90,.22), rgba(255,255,255,.10)) !important;
+  border-color:rgba(255,240,184,.34) !important;
+  box-shadow:0 16px 40px rgba(0,0,0,.20), 0 0 24px rgba(216,178,90,.10) !important;
+}
+
+.photo-img,
+.product-banner,
+.community-banner,
+.youtube-banner,
+.podcast-banner,
+.plan-banner,
+.diploma-img,
+.vip-banner,
+.shot{
+  background:
+    radial-gradient(760px 260px at 20% 12%, rgba(255,240,184,.18), transparent 62%),
+    radial-gradient(760px 260px at 85% 88%, rgba(216,178,90,.14), transparent 64%),
+    rgba(255,255,255,.08) !important;
+  border-color:rgba(255,239,184,.28) !important;
+}
+
+/* CV paper: más claro, editorial y legible */
+.cv-card{
+  background:linear-gradient(180deg, #fffdf6 0%, #f8f1df 46%, #f3ead4 100%) !important;
+  border:1px solid rgba(150,113,42,.22) !important;
+  box-shadow:0 24px 70px rgba(0,0,0,.20) !important;
+}
+.cv-wrap,
+details.accordion.cv-accordion{
+  background:rgba(255,255,255,.86) !important;
+  border-color:rgba(150,113,42,.20) !important;
+  box-shadow:0 14px 34px rgba(79,55,20,.12) !important;
+}
+details.accordion.cv-accordion summary{
+  background:linear-gradient(135deg, #fff8df, #f5e8c4, #fffdf7) !important;
+  border-bottom:1px solid rgba(150,113,42,.18) !important;
+}
+.cv-card,
+.cv-card *,
+.cv-wrap,
+.cv-wrap *,
+.cv-accordion,
+.cv-accordion *{
+  color:#15110b !important;
+  text-shadow:none !important;
+}
+.cv-accordion .acc-title,
+.cv-accordion .cv-head{
+  color:#0f0c07 !important;
+  font-weight:1000 !important;
+}
+.cv-accordion .acc-sub,
+.cv-accordion .cv-text,
+.cv-accordion .acc-body{
+  color:rgba(21,17,11,.86) !important;
+}
+
+/* Texto solicitado dorado */
+summary:has(.acc-title),
+.acc-title{
+  transition:color .18s ease;
+}
+.acc-title:where(:not(.no-gold-title)){
+  color:inherit;
+}
+summary .acc-title,
+summary span,
+summary b{
+  /* mantiene jerarquía sin bloquear otros textos */
+}
+details summary:where(:not(.plain-summary)){
+  color:#f4d98d !important;
+}
+.cv-accordion summary,
+.cv-accordion summary *{
+  color:#a77a1f !important;
+}
+
+/* En caso de que el texto sea un botón/enlace simple */
+a, button{
+  text-decoration-color:rgba(217,180,95,.55);
+}
+a[href*="#"], .btn.gold, .gold-link, .original-link{
+  color:#f4d98d !important;
+}
+
+
+/* =========================================================
+   PRO EHN · LUXURY BRILLIANT BLACK-GOLD MEDICAL v9
+   Capa visual premium: brillante, elegante, médica y dorada.
+   No modifica estructura, enlaces ni funciones JS.
+   ========================================================= */
+:root{
+  --bg0:#070605 !important;
+  --bg1:#12100b !important;
+  --bg2:#241a0b !important;
+  --text:#fff9e9 !important;
+  --muted:rgba(255,249,233,.78) !important;
+  --gold:#d6aa3b !important;
+  --gold2:#fff0b8 !important;
+  --pink:#f4b6c8 !important;
+  --fire:#e8b85c !important;
+  --fire2:#d6aa3b !important;
+  --orange2:#fff0b8 !important;
+  --shadow:0 28px 90px rgba(0,0,0,.48) !important;
+  --shadow2:0 22px 58px rgba(0,0,0,.36) !important;
+}
+html{background:#070605 !important;}
+body{
+  color:var(--text) !important;
+  background:
+    radial-gradient(900px 520px at 10% -8%, rgba(255,240,184,.34), transparent 60%),
+    radial-gradient(760px 440px at 90% 2%, rgba(214,170,59,.28), transparent 58%),
+    radial-gradient(860px 520px at 50% 110%, rgba(244,182,200,.16), transparent 62%),
+    linear-gradient(135deg, #070605 0%, #11100d 34%, #24190a 72%, #080706 100%) !important;
+  position:relative;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  background:
+    linear-gradient(115deg, transparent 0%, rgba(255,255,255,.08) 14%, transparent 28%, transparent 58%, rgba(255,240,184,.08) 70%, transparent 84%),
+    radial-gradient(circle at 15% 25%, rgba(255,240,184,.16), transparent 18%),
+    radial-gradient(circle at 84% 18%, rgba(214,170,59,.14), transparent 20%);
+  opacity:.78;
+}
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  background-image:
+    linear-gradient(rgba(255,240,184,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,240,184,.035) 1px, transparent 1px);
+  background-size:52px 52px;
+  mask-image:linear-gradient(180deg, rgba(0,0,0,.65), transparent 78%);
+}
+.wrap{filter:none !important;}
+.nav{
+  background:rgba(8,7,5,.78) !important;
+  border-bottom:1px solid rgba(255,240,184,.24) !important;
+  box-shadow:0 18px 48px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.07) !important;
+}
+.badge{
+  color:#160f05 !important;
+  background:linear-gradient(135deg,#fff7d7 0%,#d6aa3b 42%,#8d651c 100%) !important;
+  border:1px solid rgba(255,255,255,.42) !important;
+  box-shadow:0 18px 42px rgba(214,170,59,.28), inset 0 1px 0 rgba(255,255,255,.65) !important;
+}
+.brand h1,.brand p{color:#fff9e9 !important;}
+.pill,.cta,.btn{
+  color:#fff7df !important;
+  border-color:rgba(255,240,184,.28) !important;
+  background:linear-gradient(135deg, rgba(255,255,255,.10), rgba(214,170,59,.10), rgba(255,255,255,.06)) !important;
+  box-shadow:0 16px 38px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.12) !important;
+}
+.pill:hover,.cta:hover,.btn:hover{
+  border-color:rgba(255,240,184,.55) !important;
+  background:linear-gradient(135deg, rgba(255,240,184,.18), rgba(214,170,59,.16), rgba(255,255,255,.08)) !important;
+  box-shadow:0 24px 64px rgba(0,0,0,.42), 0 0 36px rgba(214,170,59,.16), inset 0 1px 0 rgba(255,255,255,.18) !important;
+}
+.btn.primary,.cta,.btn.gold{
+  color:#1a1206 !important;
+  background:linear-gradient(135deg,#fff7d7 0%,#e0bc62 45%,#b98824 100%) !important;
+  border-color:rgba(255,248,210,.72) !important;
+  text-shadow:0 1px 0 rgba(255,255,255,.35) !important;
+  box-shadow:0 18px 48px rgba(214,170,59,.22), inset 0 1px 0 rgba(255,255,255,.72) !important;
+}
+.hero h2{
+  background:linear-gradient(90deg,#fff9e9 0%,#fff0b8 24%,#d6aa3b 54%,#fff7d7 78%,#ffffff 100%) !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  color:transparent !important;
+  text-shadow:none !important;
+  filter:drop-shadow(0 18px 30px rgba(0,0,0,.48));
+}
+.kicker{
+  color:#fff0b8 !important;
+  border-color:rgba(255,240,184,.34) !important;
+  background:rgba(255,240,184,.08) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12), 0 14px 32px rgba(0,0,0,.26) !important;
+}
+.kicker .dot,.section-title h3 .mark{
+  background:linear-gradient(135deg,#fff7d7,#d6aa3b,#a97719) !important;
+  box-shadow:0 0 0 5px rgba(214,170,59,.13), 0 0 22px rgba(255,240,184,.35) !important;
+}
+.card,.service-card,.mini,.item,.service-sub,.acc-wrap,.results-card{
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.105), rgba(255,240,184,.065) 45%, rgba(255,255,255,.035)),
+    rgba(12,10,7,.70) !important;
+  border:1px solid rgba(255,240,184,.22) !important;
+  border-top-color:rgba(255,248,218,.42) !important;
+  border-left-color:rgba(214,170,59,.34) !important;
+  box-shadow:0 24px 68px rgba(0,0,0,.40), inset 0 1px 0 rgba(255,255,255,.10) !important;
+  backdrop-filter:blur(18px) saturate(1.12) !important;
+  -webkit-backdrop-filter:blur(18px) saturate(1.12) !important;
+}
+.card:hover,.service-card:hover,.mini:hover,.item:hover,.service-sub:hover,.acc-wrap:hover{
+  box-shadow:0 32px 92px rgba(0,0,0,.50), 0 0 44px rgba(214,170,59,.14), inset 0 1px 0 rgba(255,255,255,.15) !important;
+  border-color:rgba(255,240,184,.42) !important;
+}
+.gold-mirror{
+  background:
+    linear-gradient(145deg, rgba(255,248,218,.13), rgba(214,170,59,.08) 38%, rgba(255,255,255,.045)),
+    rgba(13,10,6,.72) !important;
+  border-color:rgba(255,240,184,.38) !important;
+}
+.gold-mirror::after{
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.22), transparent 35%),
+    radial-gradient(820px 260px at 20% 0%, rgba(255,240,184,.25), transparent 60%),
+    linear-gradient(120deg, transparent 0%, rgba(255,255,255,.20) 17%, rgba(255,240,184,.09) 32%, transparent 55%) !important;
+}
+.section-title h3{
+  color:#fff7df !important;
+  text-shadow:0 18px 32px rgba(0,0,0,.55), 0 0 24px rgba(214,170,59,.15) !important;
+}
+.section-title p,.small,.service-desc,.service-sub p,.mini .t,.step-desc,.cap2,.acc-sub,.hero p{color:rgba(255,249,233,.76) !important;}
+.tag,.service-badge{
+  color:#fff0b8 !important;
+  border-color:rgba(255,240,184,.28) !important;
+  background:rgba(255,240,184,.08) !important;
+}
+.photo,.photo-img,.product-banner,.community-banner,.youtube-banner,.podcast-banner,.diploma-img,.plan-banner,.vip-banner,.shot{
+  background:
+    radial-gradient(780px 260px at 18% 10%, rgba(255,240,184,.18), transparent 62%),
+    radial-gradient(760px 260px at 90% 84%, rgba(214,170,59,.16), transparent 64%),
+    linear-gradient(145deg, rgba(255,255,255,.08), rgba(10,8,5,.72)) !important;
+  border-color:rgba(255,240,184,.38) !important;
+  box-shadow:0 24px 70px rgba(0,0,0,.42), 0 0 42px rgba(214,170,59,.10), inset 0 1px 0 rgba(255,255,255,.12) !important;
+}
+.cap{
+  color:#1b1205 !important;
+  background:linear-gradient(135deg,#fff7d7,#d6aa3b,#b98824) !important;
+  border-color:rgba(255,255,255,.42) !important;
+  text-shadow:0 1px 0 rgba(255,255,255,.35) !important;
+}
+details.accordion{
+  background:rgba(10,8,5,.68) !important;
+  border-color:rgba(255,240,184,.28) !important;
+  box-shadow:0 18px 48px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.08) !important;
+}
+details.accordion summary{
+  background:linear-gradient(135deg, rgba(255,240,184,.16), rgba(255,255,255,.055), rgba(214,170,59,.10)) !important;
+  border-bottom:1px solid rgba(255,240,184,.14) !important;
+}
+.acc-title{color:#fff7df !important;}
+.acc-arrow{border-color:rgba(255,240,184,.28) !important;background:rgba(255,240,184,.08) !important;}
+.acc-body{color:rgba(255,249,233,.88) !important;}
+input,textarea{
+  color:#fff9e9 !important;
+  background:rgba(255,255,255,.08) !important;
+  border-color:rgba(255,240,184,.24) !important;
+}
+input:focus,textarea:focus{box-shadow:0 0 0 4px rgba(214,170,59,.14), 0 0 28px rgba(214,170,59,.11) !important;}
+.footer{border-top-color:rgba(255,240,184,.18) !important;color:rgba(255,249,233,.70) !important;}
+.footer a{color:#fff0b8 !important;}
+.float-dock a{border-color:rgba(255,240,184,.38) !important;box-shadow:0 24px 58px rgba(0,0,0,.44), 0 0 28px rgba(214,170,59,.14), inset 0 1px 0 rgba(255,255,255,.2) !important;}
+.float-ig,.float-mail,.float-wa{background:linear-gradient(135deg,#fff7d7 0%,#d6aa3b 42%,#8d651c 100%) !important;}
+.float-dock a svg{fill:#1b1205 !important;}
+/* CV tipo paper: blanco editorial y texto negro 100% legible */
+.cv-card,
+.cv-wrap,
+details.accordion.cv-accordion{
+  background:linear-gradient(180deg,#ffffff 0%,#fffaf0 46%,#f7efe0 100%) !important;
+  border:1px solid rgba(151,105,22,.22) !important;
+  box-shadow:0 26px 74px rgba(0,0,0,.24), 0 0 0 1px rgba(255,240,184,.25) inset !important;
+}
+.cv-card,
+.cv-card *,
+.cv-wrap,
+.cv-wrap *,
+details.accordion.cv-accordion,
+details.accordion.cv-accordion *{
+  color:#141006 !important;
+  text-shadow:none !important;
+}
+details.accordion.cv-accordion summary{
+  background:linear-gradient(135deg,#fff7d7 0%,#f0d486 48%,#fffaf0 100%) !important;
+  border-bottom:1px solid rgba(151,105,22,.20) !important;
+}
+details.accordion.cv-accordion .acc-title{color:#141006 !important;font-weight:1000 !important;}
+details.accordion.cv-accordion .acc-sub{color:rgba(20,16,6,.72) !important;}
+details.accordion.cv-accordion .acc-body,
+details.accordion.cv-accordion .cv-text{color:rgba(20,16,6,.90) !important;}
+details.accordion.cv-accordion .acc-arrow{background:rgba(255,255,255,.45) !important;border-color:rgba(151,105,22,.22) !important;}
+details.accordion.cv-accordion .acc-arrow svg path{stroke:#141006 !important;}
+/* Mantener “Ver texto original completo” dorado */
+summary .acc-title,
+details summary,
+.cv-accordion summary .acc-title{
+  text-decoration-color:rgba(214,170,59,.55) !important;
+}
+.cv-accordion summary .acc-title,
+.cv-accordion summary strong,
+.cv-accordion summary span{
+  color:#8d651c !important;
+}
+/* Cajas amarillas: contraste real */
+.yellow-box,.yellow-box *{color:#090806 !important;text-shadow:none !important;}
+.yellow-box{background:linear-gradient(135deg,#fff7d7,#f1d681) !important;border-color:rgba(151,105,22,.28) !important;}
+@media (max-width:780px){
+  .links{background:rgba(12,10,7,.78) !important;border-color:rgba(255,240,184,.20) !important;}
+}
+
+
+
+    /* === RESTAURACIÓN NEÓN PALPITANTE · PRO EHN v10 === */
+    .pulse-pay,
+    .community-pulse,
+    .ebook-neon.ebook-pulse,
+    .btn.vip.vip-cta,
+    .plan-pulse{
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      transform-origin: center;
+    }
+
+    .pulse-pay::after,
+    .community-pulse::after,
+    .ebook-neon.ebook-pulse::after,
+    .btn.vip.vip-cta::after,
+    .plan-pulse::after{
+      content:"";
+      position:absolute;
+      inset:-3px;
+      border-radius: inherit;
+      pointer-events:none;
+      z-index:-1;
+      opacity:.95;
+      filter: blur(10px);
+    }
+
+    .pulse-pay{
+      border-color: rgba(255,198,74,.78) !important;
+      background:
+        linear-gradient(135deg, rgba(255,221,128,.26), rgba(255,144,41,.22), rgba(255,255,255,.10)) !important;
+      box-shadow:
+        0 18px 42px rgba(0,0,0,.28),
+        0 0 0 1px rgba(255,226,145,.26) inset,
+        0 0 18px rgba(255,193,77,.34),
+        0 0 46px rgba(255,138,42,.22),
+        0 0 82px rgba(255,62,165,.12) !important;
+      animation: payPulse 1.35s ease-in-out infinite !important;
+    }
+    .pulse-pay::after{
+      background: radial-gradient(circle, rgba(255,207,91,.42), rgba(255,138,42,.18) 42%, transparent 70%);
+    }
+
+    .community-pulse,
+    .btn.community.community-pulse,
+    .btn.plan-green.plan-pulse,
+    .btn.vip.vip-cta{
+      border-color: rgba(57,255,20,.86) !important;
+      box-shadow:
+        0 18px 42px rgba(0,0,0,.28),
+        0 0 0 1px rgba(57,255,20,.22) inset,
+        0 0 20px rgba(57,255,20,.38),
+        0 0 54px rgba(57,255,20,.24),
+        0 0 96px rgba(57,255,20,.14) !important;
+    }
+    .community-pulse::after,
+    .btn.vip.vip-cta::after,
+    .plan-pulse::after{
+      background: radial-gradient(circle, rgba(57,255,20,.42), rgba(57,255,20,.18) 42%, transparent 70%);
+    }
+
+    .ebook-neon.ebook-pulse{
+      border-color: rgba(57,255,20,.95) !important;
+      box-shadow:
+        0 18px 46px rgba(0,0,0,.30),
+        0 0 0 1px rgba(57,255,20,.30),
+        0 0 24px rgba(57,255,20,.42),
+        0 0 70px rgba(57,255,20,.24),
+        0 0 118px rgba(57,255,20,.16) !important;
+      animation: ebookPulse 1.35s ease-in-out infinite !important;
+    }
+    .ebook-neon.ebook-pulse::after{
+      background: radial-gradient(circle, rgba(57,255,20,.44), rgba(57,255,20,.18) 45%, transparent 72%);
+    }
+
+    @keyframes payPulse{
+      0%{
+        transform: translateY(0) scale(1);
+        box-shadow:
+          0 18px 42px rgba(0,0,0,.28),
+          0 0 0 1px rgba(255,226,145,.22) inset,
+          0 0 16px rgba(255,193,77,.30),
+          0 0 38px rgba(255,138,42,.18),
+          0 0 0 0 rgba(255,198,74,.28);
+        filter:saturate(1.02) brightness(1.01);
+      }
+      50%{
+        transform: translateY(-2px) scale(1.045);
+        box-shadow:
+          0 26px 68px rgba(0,0,0,.34),
+          0 0 0 2px rgba(255,226,145,.34) inset,
+          0 0 28px rgba(255,207,91,.58),
+          0 0 72px rgba(255,138,42,.38),
+          0 0 118px rgba(255,62,165,.20),
+          0 0 0 12px rgba(255,198,74,.12);
+        filter:saturate(1.13) brightness(1.09);
+      }
+      100%{
+        transform: translateY(0) scale(1);
+        box-shadow:
+          0 18px 42px rgba(0,0,0,.28),
+          0 0 0 1px rgba(255,226,145,.22) inset,
+          0 0 16px rgba(255,193,77,.30),
+          0 0 38px rgba(255,138,42,.18),
+          0 0 0 0 rgba(255,198,74,.28);
+        filter:saturate(1.02) brightness(1.01);
+      }
+    }
+
+    @keyframes commPulse{
+      0%{
+        transform: translateY(0) scale(1);
+        box-shadow:
+          0 18px 42px rgba(0,0,0,.28),
+          0 0 0 1px rgba(57,255,20,.20) inset,
+          0 0 18px rgba(57,255,20,.30),
+          0 0 42px rgba(57,255,20,.18),
+          0 0 0 0 rgba(57,255,20,.22);
+        filter:saturate(1.02) brightness(1.01);
+      }
+      50%{
+        transform: translateY(-2px) scale(1.05);
+        box-shadow:
+          0 28px 72px rgba(0,0,0,.36),
+          0 0 0 2px rgba(57,255,20,.34) inset,
+          0 0 30px rgba(57,255,20,.62),
+          0 0 80px rgba(57,255,20,.38),
+          0 0 130px rgba(57,255,20,.22),
+          0 0 0 14px rgba(57,255,20,.12);
+        filter:saturate(1.16) brightness(1.10);
+      }
+      100%{
+        transform: translateY(0) scale(1);
+        box-shadow:
+          0 18px 42px rgba(0,0,0,.28),
+          0 0 0 1px rgba(57,255,20,.20) inset,
+          0 0 18px rgba(57,255,20,.30),
+          0 0 42px rgba(57,255,20,.18),
+          0 0 0 0 rgba(57,255,20,.22);
+        filter:saturate(1.02) brightness(1.01);
+      }
+    }
+
+    @keyframes ebookPulse{ 0%{transform:translateY(0) scale(1);box-shadow:0 18px 46px rgba(0,0,0,.30),0 0 0 1px rgba(57,255,20,.28),0 0 22px rgba(57,255,20,.38),0 0 58px rgba(57,255,20,.22),0 0 0 0 rgba(57,255,20,.22);filter:saturate(1.02) brightness(1.01);} 50%{transform:translateY(-2px) scale(1.035);box-shadow:0 28px 76px rgba(0,0,0,.38),0 0 0 2px rgba(57,255,20,.42),0 0 36px rgba(57,255,20,.72),0 0 92px rgba(57,255,20,.42),0 0 142px rgba(57,255,20,.24),0 0 0 14px rgba(57,255,20,.12);filter:saturate(1.17) brightness(1.10);} 100%{transform:translateY(0) scale(1);box-shadow:0 18px 46px rgba(0,0,0,.30),0 0 0 1px rgba(57,255,20,.28),0 0 22px rgba(57,255,20,.38),0 0 58px rgba(57,255,20,.22),0 0 0 0 rgba(57,255,20,.22);filter:saturate(1.02) brightness(1.01);} }
+
+    @keyframes planBtnPulse{ 0%{transform:translateY(0) scale(1);box-shadow:0 18px 42px rgba(0,0,0,.28),0 0 0 1px rgba(57,255,20,.20) inset,0 0 18px rgba(57,255,20,.30),0 0 42px rgba(57,255,20,.18),0 0 0 0 rgba(57,255,20,.22);filter:saturate(1.02) brightness(1.01);} 50%{transform:translateY(-2px) scale(1.05);box-shadow:0 28px 72px rgba(0,0,0,.36),0 0 0 2px rgba(57,255,20,.34) inset,0 0 30px rgba(57,255,20,.62),0 0 80px rgba(57,255,20,.38),0 0 130px rgba(57,255,20,.22),0 0 0 14px rgba(57,255,20,.12);filter:saturate(1.16) brightness(1.10);} 100%{transform:translateY(0) scale(1);box-shadow:0 18px 42px rgba(0,0,0,.28),0 0 0 1px rgba(57,255,20,.20) inset,0 0 18px rgba(57,255,20,.30),0 0 42px rgba(57,255,20,.18),0 0 0 0 rgba(57,255,20,.22);filter:saturate(1.02) brightness(1.01);} }
+
+    @keyframes vipBtnPulse{ 0%{transform:translateY(0) scale(1);box-shadow:0 18px 42px rgba(0,0,0,.28),0 0 0 1px rgba(57,255,20,.20) inset,0 0 18px rgba(57,255,20,.30),0 0 42px rgba(57,255,20,.18),0 0 0 0 rgba(57,255,20,.22);filter:saturate(1.02) brightness(1.01);} 50%{transform:translateY(-2px) scale(1.05);box-shadow:0 28px 72px rgba(0,0,0,.36),0 0 0 2px rgba(57,255,20,.34) inset,0 0 30px rgba(57,255,20,.62),0 0 80px rgba(57,255,20,.38),0 0 130px rgba(57,255,20,.22),0 0 0 14px rgba(57,255,20,.12);filter:saturate(1.16) brightness(1.10);} 100%{transform:translateY(0) scale(1);box-shadow:0 18px 42px rgba(0,0,0,.28),0 0 0 1px rgba(57,255,20,.20) inset,0 0 18px rgba(57,255,20,.30),0 0 42px rgba(57,255,20,.18),0 0 0 0 rgba(57,255,20,.22);filter:saturate(1.02) brightness(1.01);} }
+
+
+    /* === PRO EHN · SINCRONIZACIÓN TOTAL DE BOTONES PALPITANTES === */
+    :root{
+      --proehn-sync-pulse-duration: 1.45s;
+      --proehn-sync-pulse-ease: cubic-bezier(.42,0,.22,1);
+    }
+
+    .pulse-pay,
+    .community-pulse,
+    .btn.community.community-pulse,
+    .ebook-neon.ebook-pulse,
+    .btn.plan-green.plan-pulse,
+    .plan-pulse,
+    .btn.vip.vip-cta,
+    .vip-pulse,
+    .float-pulse{
+      animation-duration: var(--proehn-sync-pulse-duration) !important;
+      animation-delay: 0s !important;
+      animation-timing-function: var(--proehn-sync-pulse-ease) !important;
+      animation-iteration-count: infinite !important;
+      animation-direction: normal !important;
+      animation-fill-mode: both !important;
+      animation-play-state: running !important;
+    }
+
+    /* Si algún elemento trae clase de pulso pero no tenía animación definida, se integra al mismo latido */
+    .vip-pulse{
+      animation-name: proehnSyncedGoldGreenPulse !important;
+      transform-origin:center !important;
+    }
+
+    @keyframes proehnSyncedGoldGreenPulse{
+      0%{
+        transform:translateY(0) scale(1);
+        box-shadow:
+          0 18px 46px rgba(0,0,0,.28),
+          0 0 0 1px rgba(57,255,20,.20),
+          0 0 20px rgba(57,255,20,.28),
+          0 0 52px rgba(216,178,90,.18),
+          0 0 0 0 rgba(57,255,20,.18);
+        filter:saturate(1.02) brightness(1.01);
+      }
+      50%{
+        transform:translateY(-2px) scale(1.045);
+        box-shadow:
+          0 30px 78px rgba(0,0,0,.36),
+          0 0 0 2px rgba(57,255,20,.34),
+          0 0 34px rgba(57,255,20,.62),
+          0 0 92px rgba(216,178,90,.30),
+          0 0 132px rgba(57,255,20,.20),
+          0 0 0 14px rgba(57,255,20,.10);
+        filter:saturate(1.16) brightness(1.10);
+      }
+      100%{
+        transform:translateY(0) scale(1);
+        box-shadow:
+          0 18px 46px rgba(0,0,0,.28),
+          0 0 0 1px rgba(57,255,20,.20),
+          0 0 20px rgba(57,255,20,.28),
+          0 0 52px rgba(216,178,90,.18),
+          0 0 0 0 rgba(57,255,20,.18);
+        filter:saturate(1.02) brightness(1.01);
+      }
+    }
+
+    /* Los brillos internos también laten en la misma fase */
+    .pulse-pay::after,
+    .community-pulse::after,
+    .ebook-neon.ebook-pulse::after,
+    .plan-pulse::after,
+    .btn.vip.vip-cta::after{
+      animation-duration: var(--proehn-sync-pulse-duration) !important;
+      animation-delay: 0s !important;
+      animation-timing-function: var(--proehn-sync-pulse-ease) !important;
+    }
+
+  
+
+/* === PRO EHN · CUPÓN CONCEPTO ONE DESTACADO v12 === */
+.coupon-one-card{
+  position:relative;
+  width:100%;
+  min-height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  overflow:hidden;
+  border-radius:22px !important;
+  padding:20px !important;
+  background:
+    radial-gradient(420px 190px at 18% 12%, rgba(255,239,167,.38), transparent 62%),
+    radial-gradient(420px 190px at 85% 88%, rgba(255,184,28,.24), transparent 64%),
+    linear-gradient(135deg, rgba(17,17,17,.94), rgba(52,37,18,.94) 48%, rgba(13,13,13,.96)) !important;
+  border:1px solid rgba(255,218,112,.58) !important;
+  box-shadow:
+    0 26px 72px rgba(0,0,0,.38),
+    0 0 0 1px rgba(255,240,180,.10) inset,
+    0 0 42px rgba(255,196,67,.18) !important;
+}
+.coupon-one-card::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background:
+    linear-gradient(115deg, transparent 0%, rgba(255,255,255,.20) 18%, transparent 36%),
+    repeating-linear-gradient(90deg, rgba(255,218,112,.08) 0 1px, transparent 1px 34px);
+  opacity:.65;
+  pointer-events:none;
+  animation: couponShine 4.8s ease-in-out infinite;
+}
+@keyframes couponShine{
+  0%,100%{ transform:translateX(-18%); opacity:.42; }
+  50%{ transform:translateX(18%); opacity:.80; }
+}
+.coupon-one-badge{
+  position:relative;
+  z-index:2;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:8px 13px;
+  border-radius:999px;
+  margin-bottom:12px;
+  color:#191007 !important;
+  font-family:var(--mono);
+  font-size:12px;
+  font-weight:1000;
+  letter-spacing:.75px;
+  text-transform:uppercase;
+  background:linear-gradient(135deg, #fff8c9, #d8a930 52%, #fff0a6);
+  border:1px solid rgba(255,255,255,.55);
+  box-shadow:0 14px 30px rgba(0,0,0,.28), 0 0 28px rgba(255,214,78,.22);
+  text-shadow:none !important;
+}
+.coupon-one-code{
+  position:relative;
+  z-index:2;
+  width:100%;
+  border-radius:20px;
+  padding:18px 14px;
+  border:1px dashed rgba(255,244,190,.72);
+  background:
+    radial-gradient(420px 180px at 50% 0%, rgba(255,247,201,.28), transparent 68%),
+    linear-gradient(135deg, rgba(255,230,146,.98), rgba(255,249,222,.96) 42%, rgba(219,169,51,.94));
+  color:#130d07 !important;
+  box-shadow:
+    0 18px 42px rgba(0,0,0,.28),
+    0 0 0 2px rgba(255,255,255,.22) inset,
+    0 0 32px rgba(255,214,78,.18);
+}
+.coupon-one-code *{ color:#130d07 !important; text-shadow:none !important; }
+.coupon-one-code .coupon-title{
+  display:block;
+  font-size:17px;
+  font-weight:950;
+  margin-bottom:8px;
+  letter-spacing:.1px;
+}
+.coupon-one-code .coupon-big{
+  display:inline-block;
+  margin:2px 0 8px;
+  padding:9px 18px;
+  border-radius:14px;
+  background:linear-gradient(135deg, #191007, #3a2a12);
+  color:#ffeaa2 !important;
+  font-size:28px;
+  line-height:1;
+  font-weight:1000;
+  letter-spacing:1.2px;
+  box-shadow:0 12px 26px rgba(0,0,0,.24), 0 0 24px rgba(255,214,78,.18);
+  border:1px solid rgba(255,232,143,.55);
+  text-shadow:0 0 12px rgba(255,225,114,.18) !important;
+}
+.coupon-one-code .coupon-desc{
+  display:block;
+  font-size:13.5px;
+  font-weight:850;
+  line-height:1.5;
+  opacity:.92;
+}
+.coupon-one-note{
+  position:relative;
+  z-index:2;
+  margin:12px 0 0 !important;
+  color:rgba(255,248,220,.86) !important;
+  font-weight:800;
+  text-align:center;
+}
+.coupon-one-note strong{
+  color:#ffeaa2 !important;
+  text-shadow:0 0 12px rgba(255,225,114,.22) !important;
+}
+.btn.concepto-one-btn{
+  position:relative;
+  z-index:2;
+  margin-top:14px;
+  width:100%;
+  justify-content:center;
+  border-radius:18px;
+  border-color:rgba(255,235,150,.82) !important;
+  color:#fff8dc !important;
+  background:
+    linear-gradient(135deg, rgba(255,215,83,.28), rgba(255,255,255,.08) 35%, rgba(255,180,40,.22)),
+    linear-gradient(135deg, #161616, #3a2a12) !important;
+  box-shadow:
+    0 18px 42px rgba(0,0,0,.30),
+    0 0 0 1px rgba(255,244,190,.16) inset,
+    0 0 26px rgba(255,214,78,.22) !important;
+}
+.btn.concepto-one-btn:hover{
+  transform:translateY(-2px) scale(1.02);
+  box-shadow:
+    0 26px 62px rgba(0,0,0,.38),
+    0 0 0 1px rgba(255,244,190,.22) inset,
+    0 0 42px rgba(255,214,78,.30) !important;
+}
+.coupon-spark{
+  position:absolute;
+  width:10px;
+  height:10px;
+  border-radius:999px;
+  background:#fff0a6;
+  box-shadow:0 0 20px rgba(255,230,118,.75);
+  opacity:.9;
+  z-index:1;
+}
+.coupon-spark.s1{ top:20px; right:24px; animation: sparkFloat 2.8s ease-in-out infinite; }
+.coupon-spark.s2{ bottom:28px; left:28px; animation: sparkFloat 3.2s ease-in-out infinite reverse; }
+@keyframes sparkFloat{
+  0%,100%{ transform:translateY(0) scale(.75); opacity:.55; }
+  50%{ transform:translateY(-8px) scale(1.15); opacity:1; }
+}
+@media (max-width:520px){
+  .coupon-one-code .coupon-big{ font-size:23px; padding:8px 14px; }
+  .coupon-one-card{ padding:16px !important; }
+}
+
+  
+
+/* === PRO EHN · CUPONES DISCRETOS Y ELEGANTES v13 === */
+.coupon-one-card.coupon-elegant{
+  padding:18px !important;
+  border-radius:24px !important;
+  background:
+    radial-gradient(480px 210px at 20% 5%, rgba(255,246,205,.24), transparent 62%),
+    radial-gradient(440px 220px at 84% 90%, rgba(216,178,90,.14), transparent 65%),
+    linear-gradient(135deg, rgba(22,23,25,.96), rgba(45,39,28,.95) 48%, rgba(16,17,19,.97)) !important;
+  border:1px solid rgba(233,204,126,.40) !important;
+  box-shadow:
+    0 22px 58px rgba(0,0,0,.30),
+    0 0 0 1px rgba(255,245,203,.08) inset,
+    0 0 28px rgba(216,178,90,.10) !important;
+}
+.coupon-one-card.coupon-elegant::before{
+  opacity:.36 !important;
+  animation: couponElegantShine 7.5s ease-in-out infinite !important;
+  background:
+    linear-gradient(115deg, transparent 0%, rgba(255,255,255,.13) 18%, transparent 36%),
+    repeating-linear-gradient(90deg, rgba(255,218,112,.035) 0 1px, transparent 1px 38px) !important;
+}
+@keyframes couponElegantShine{
+  0%,100%{ transform:translateX(-10%); opacity:.24; }
+  50%{ transform:translateX(10%); opacity:.48; }
+}
+.coupon-one-card.coupon-elegant .coupon-one-badge{
+  padding:7px 12px;
+  margin-bottom:11px;
+  color:#24190b !important;
+  background:linear-gradient(135deg, #fff7dc, #d8b25a 58%, #fff0bd) !important;
+  border:1px solid rgba(255,255,255,.44) !important;
+  box-shadow:0 10px 22px rgba(0,0,0,.22), 0 0 18px rgba(216,178,90,.14) !important;
+  font-size:11.5px;
+  letter-spacing:.65px;
+}
+.coupon-one-card.coupon-elegant .coupon-one-code{
+  border-radius:19px;
+  padding:16px 14px;
+  border:1px solid rgba(232,204,126,.48) !important;
+  background:
+    radial-gradient(400px 160px at 50% 0%, rgba(255,250,228,.42), transparent 70%),
+    linear-gradient(135deg, rgba(255,250,232,.96), rgba(246,235,203,.95) 48%, rgba(214,181,93,.88)) !important;
+  box-shadow:
+    0 15px 34px rgba(0,0,0,.22),
+    0 0 0 1px rgba(255,255,255,.20) inset,
+    0 0 20px rgba(216,178,90,.10) !important;
+}
+.coupon-one-card.coupon-elegant .coupon-title{
+  font-size:15.5px !important;
+  font-weight:900 !important;
+  color:#1c160c !important;
+}
+.coupon-one-card.coupon-elegant .coupon-big{
+  margin:4px 0 9px !important;
+  padding:8px 16px !important;
+  border-radius:13px !important;
+  background:linear-gradient(135deg, #181817, #3a2c14) !important;
+  color:#f7dfa0 !important;
+  font-size:25px !important;
+  letter-spacing:1.1px !important;
+  border:1px solid rgba(246,222,160,.48) !important;
+  box-shadow:0 10px 22px rgba(0,0,0,.22), 0 0 18px rgba(216,178,90,.14) !important;
+}
+.coupon-one-card.coupon-elegant .coupon-desc{
+  font-size:13.2px !important;
+  font-weight:780 !important;
+  color:#2b2417 !important;
+}
+.coupon-one-card.coupon-elegant .concepto-one-btn{
+  margin-top:13px;
+  border-radius:16px !important;
+  border-color:rgba(232,204,126,.58) !important;
+  color:#fff3c8 !important;
+  background:
+    linear-gradient(135deg, rgba(216,178,90,.20), rgba(255,255,255,.06) 42%, rgba(216,178,90,.16)),
+    linear-gradient(135deg, #17191b, #2f2617) !important;
+  box-shadow:
+    0 15px 36px rgba(0,0,0,.24),
+    0 0 0 1px rgba(255,244,190,.10) inset,
+    0 0 18px rgba(216,178,90,.14) !important;
+}
+.coupon-one-card.coupon-elegant .concepto-one-btn:hover{
+  transform:translateY(-2px) scale(1.015);
+  box-shadow:
+    0 21px 48px rgba(0,0,0,.30),
+    0 0 0 1px rgba(255,244,190,.16) inset,
+    0 0 28px rgba(216,178,90,.20) !important;
+}
+.coupon-one-card.coupon-elegant .coupon-one-note{
+  color:rgba(255,246,218,.78) !important;
+  font-weight:760 !important;
+}
+.coupon-one-card.coupon-elegant .coupon-one-note strong{
+  color:#f7dfa0 !important;
+}
+.coupon-one-card.coupon-elegant .coupon-spark{
+  width:7px !important;
+  height:7px !important;
+  opacity:.58 !important;
+  background:#f7dfa0 !important;
+  box-shadow:0 0 14px rgba(216,178,90,.45) !important;
+}
+.wellogi-coupon-card .coupon-one-badge{
+  background:linear-gradient(135deg, #f6fbff, #d8b25a 58%, #eef6ff) !important;
+}
+.wellogi-coupon-card .coupon-one-code{
+  background:
+    radial-gradient(400px 160px at 50% 0%, rgba(255,250,228,.42), transparent 70%),
+    linear-gradient(135deg, rgba(250,253,255,.97), rgba(242,235,213,.95) 50%, rgba(214,181,93,.86)) !important;
+}
+@media (max-width:520px){
+  .coupon-one-card.coupon-elegant .coupon-big{ font-size:22px !important; }
+}
+
+  </style>
 </head>
 
 <body>
@@ -2032,9 +3367,69 @@
                   </div>
                 </summary>
 
-                <div class="acc-body">
-                  <div class="cv-head">CV (texto completo)</div>
-                  <p class="cv-text">Raúl Vargas Zalazar 
+                <div class="acc-body cv-paper-body">
+  <article class="cv-paper">
+    <header class="cv-paper-hero">
+      <div class="cv-paper-kicker">Clinical profile · PRO EHN</div>
+      <h4>Raúl Vargas Zalazar</h4>
+      <p>L.Nutrición · ESTUDIANTE DE LIC. EN CULTURA FÍSICA Y DEPORTE.</p>
+      <div class="cv-paper-chips">
+        <span>SOP · salud hormonal femenina</span>
+        <span>Nutrición clínica</span>
+        <span>Entrenamiento aplicado</span>
+        <span>Suplementación y antidopaje</span>
+      </div>
+    </header>
+
+    <section class="cv-paper-abstract">
+      <div class="cv-paper-label">Resumen profesional</div>
+      <p>Perfil profesional enfocado en fisiología femenina, síndrome de ovario poliquístico, endocrinopatías, recomposición corporal, entrenamiento y estrategias de nutrición aplicada. Trayectoria construida desde la educación, la ponencia académica y el desarrollo de herramientas clínicas para profesionales.</p>
+    </section>
+
+    <div class="cv-paper-grid">
+      <section class="cv-paper-block">
+        <h5>Áreas de experiencia</h5>
+        <ul><li>Más de 7 años estudiando el impacto de la nutrición sobre endocrinopatias.</li>
+<li>EXPERIENCIA en Nutrición, entrenamiento, Suplementación, y antidopaje.</li>
+<li>Más de 7 años estudiando la fisiopatología del síndrome de ovario poliquístico, miomatosis, endometriosis, otras afecciones en la fisiología femenina.</li></ul>
+      </section>
+      <section class="cv-paper-block">
+        <h5>Formación, certificaciones y diplomados</h5>
+        <ul><li>Certificación en Nutrición Especializada aplicada al Fisicoconstructivismo y Fitness, por la Academia de Fisicoconstructivismo y Fitness del estado de Jalisco (AFFEJ)/NABBA Jalisco (National Amateur Bodybuilders Association), en coordinación con el Instituto de Nutrición Aplicada al Deporte (INAD). (MÉXICO).</li>
+<li>Especialista en Entrenamiento enfocado en las Mujeres, por el INAF en Coordinación con la ACAFFEM. (MÉXICO)</li>
+<li>DIPLOMADO EN NUTRICIÓN, ENTRENAMIENTO, Y CIENCIAS APLICADAS a la recomposición corporal. (Wellogi academy, 160 hrs con valor curricular)</li>
+<li>Especialista en Entrenamiento enfocado en las Mujeres, por el INAF en Coordinación con la ACAFFEM. (MÉXICO).</li>
+<li>Certificación en ciencias de las PIED&#x27;S, Wellogi academy. (MÉXICO).</li>
+<li>Certificado como Entrenador Profesional por el Instituto Nacional de Acondicionamiento Físico y Nutrición Deportiva (INAF), en coordinación con la Academia de Acondicionamiento Físico y Fitness del estado de Michoacán. Con aval de la NSCA (MÉXICO).</li></ul>
+      </section>
+    </div>
+
+    <section class="cv-paper-block cv-paper-wide">
+      <h5>Docencia, ponencias y participación académica</h5>
+      <ul><li>Ponente en el curso: Síndrome De Ovario Poliquístico Abordaje, Diagnóstico y Tratamiento. Sociedad Internacional de Nutriólogos en México. SOCINUM AC. (MÉXICO).</li>
+<li>Ponente en Wellogi Academy en la certificación: Especialización en abordaje Nutricional, Suplementación y Farmacológico en el Síndrome de Ovario Poliquístico. (MÉXICO)</li>
+<li>Ponente en el curso &quot;La ciencia del fitness, 2 da generación&quot;. Abordaje en el Síndrome de Ovario Poliquístico. Acreditado Colegio de Profesionales de la Salud del Estado de Guerrero A. C y avalado por la Universidad Autónoma de Guerrero. (UAGro). (MÉXICO).</li>
+<li>Ponente Internacional en el Curso: Síndrome de Ovario Poliquístico: Enfoque Nutricional y Farmacológico. Organizado por Nutrition Society. (Perú).</li>
+<li>Ponente Internacional en el Curso: Síndrome de Ovario Poliquístico: Enfoque Nutricional y Farmacológico. II EDICIÓN. (PERÚ).</li>
+<li>Ponente Internacional en el Curso-Taller Internacional De Síndrome De Ovario Poliquístico   II EDICIÓN; OrganizadO por NUTRILIVERY. (PERÚ).</li>
+<li>Ponente en la Jornada Internacional de Nutrición y Salud Mental, impartiendo el tema Síndrome de Ovario Poliquístico. Organizada por NUTRILIVERY. (PERÚ).</li>
+<li>Ponente Internacional en la VIII Jornada Internacional de Nutrición sobre el tema: Nutrición y Síndrome de Ovario Poliquístico. Organizada por NUTRILIVERY. (PERÚ).</li>
+<li>Ponente nacional en el curso: Recomposición corporal en el sindrome de ovario poliquístico. Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  Organizado por EDDN (El Diario Del Nutriólogo) Academy</li>
+<li>Ponente Internacional en el IX Congreso Internacional de Actualización De Nutrición. Abordaje Nutricional en el Síndrome De Ovario Poliquístico. Organizada por NUTRILIVERY. (PERÚ).</li>
+<li>Ponente internacional en el: CURSO INTERNACIONAL: ABORDAJE NUTRICIONAL Y SUPLEMENTACIÓN EN EL SÍNDROME DE OVARIO POLIQUÍSTICO. (ACREDITADO POR el consejo regional VI de arequipa, colegio de nutricionistas del Perú, con valor académico de 30 horas)</li></ul>
+    </section>
+
+    <section class="cv-paper-block cv-paper-wide">
+      <h5>Cursos y formación complementaria</h5>
+      <ul><li>Seminario de &quot;Nutrición y Entrenamiento Aplicado al Fisicoconstructivismo y Fitness&quot;. Avalado por el centro universitario UNAM A. C. (MÉXICO).</li>
+<li>Enfocado principalmente en la fisiología femenina así como múltiples problemas de salud que pueden tratarse con la nutrición, suplementación y prescripción del entrenamiento. (MÉXICO).</li>
+<li>Curso: Nutrición Aplicada a las Enfermedades Ginecológicas - Colegio Mexicano de Nutriólogos, AC. (MÉXICO).</li>
+<li>Curso-Taller &quot;La Ciencia del Fitness&quot;. Acreditado por el Colegio de Profesionales de la Salud del Estado de Guerrero A. C y avalado por la Universidad Autónoma de Guerrero. (UAGro). (MÉXICO).</li></ul>
+    </section>
+
+    <details class="cv-raw-source">
+      <summary>Ver texto original completo</summary>
+      <p class="cv-text">Raúl Vargas Zalazar 
 L.Nutrición  
 ESTUDIANTE DE LIC. EN CULTURA FÍSICA Y DEPORTE. 
 
@@ -2042,7 +3437,7 @@ ESTUDIANTE DE LIC. EN CULTURA FÍSICA Y DEPORTE.
 -EXPERIENCIA en Nutrición, entrenamiento, Suplementación, y antidopaje.
 -Más de 7 años estudiando la fisiopatología del síndrome de ovario poliquístico, miomatosis, endometriosis, otras afecciones en la fisiología femenina.
 
--Seminario de "Nutrición y Entrenamiento Aplicado al Fisicoconstructivismo y Fitness". Avalado por el centro universitario UNAM A. C. (MÉXICO).
+-Seminario de &quot;Nutrición y Entrenamiento Aplicado al Fisicoconstructivismo y Fitness&quot;. Avalado por el centro universitario UNAM A. C. (MÉXICO).
 
 -Certificación en Nutrición Especializada aplicada al Fisicoconstructivismo y Fitness, por la Academia de Fisicoconstructivismo y Fitness del estado de Jalisco (AFFEJ)/NABBA Jalisco (National Amateur Bodybuilders Association), en coordinación con el Instituto de Nutrición Aplicada al Deporte (INAD). (MÉXICO).
 
@@ -2054,7 +3449,7 @@ ESTUDIANTE DE LIC. EN CULTURA FÍSICA Y DEPORTE.
 
 -Enfocado principalmente en la fisiología femenina así como múltiples problemas de salud que pueden tratarse con la nutrición, suplementación y prescripción del entrenamiento. (MÉXICO).
 
--Ponente en el curso "La ciencia del fitness, 2 da generación". Abordaje en el Síndrome de Ovario Poliquístico. Acreditado Colegio de Profesionales de la Salud del Estado de Guerrero A. C y avalado por la Universidad Autónoma de Guerrero. (UAGro). (MÉXICO).
+-Ponente en el curso &quot;La ciencia del fitness, 2 da generación&quot;. Abordaje en el Síndrome de Ovario Poliquístico. Acreditado Colegio de Profesionales de la Salud del Estado de Guerrero A. C y avalado por la Universidad Autónoma de Guerrero. (UAGro). (MÉXICO).
 
 -DIPLOMADO EN NUTRICIÓN, ENTRENAMIENTO, Y CIENCIAS APLICADAS a la recomposición corporal.
 (Wellogi academy, 160 hrs con valor curricular)
@@ -2076,16 +3471,18 @@ ESTUDIANTE DE LIC. EN CULTURA FÍSICA Y DEPORTE.
 -Ponente nacional en el curso: Recomposición corporal en el sindrome de ovario poliquístico.
 Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  Organizado por EDDN (El Diario Del Nutriólogo) Academy
 
--Certificación en ciencias de las PIED'S, Wellogi academy. (MÉXICO).
+-Certificación en ciencias de las PIED&#x27;S, Wellogi academy. (MÉXICO).
 
 -Ponente Internacional en el IX Congreso Internacional de Actualización De Nutrición. Abordaje Nutricional en el Síndrome De Ovario Poliquístico. Organizada por NUTRILIVERY. (PERÚ).
 
--Curso-Taller "La Ciencia del Fitness". Acreditado por el Colegio de Profesionales de la Salud del Estado de Guerrero A. C y avalado por la Universidad Autónoma de Guerrero. (UAGro). (MÉXICO).
+-Curso-Taller &quot;La Ciencia del Fitness&quot;. Acreditado por el Colegio de Profesionales de la Salud del Estado de Guerrero A. C y avalado por la Universidad Autónoma de Guerrero. (UAGro). (MÉXICO).
 
 -Certificado como Entrenador Profesional por el Instituto Nacional de Acondicionamiento Físico y Nutrición Deportiva (INAF), en coordinación con la Academia de Acondicionamiento Físico y Fitness del estado de Michoacán. Con aval de la NSCA (MÉXICO).
 
 -Ponente internacional en el: CURSO INTERNACIONAL: ABORDAJE NUTRICIONAL Y SUPLEMENTACIÓN EN EL SÍNDROME DE OVARIO POLIQUÍSTICO. (ACREDITADO POR el consejo regional VI de arequipa, colegio de nutricionistas del Perú, con valor académico de 30 horas)</p>
-                </div>
+    </details>
+  </article>
+</div>
               </details>
             </div>
           </div>
@@ -2518,41 +3915,27 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
                 </div>
 
                 <div class="product-cta-side">
-                  <div class="item gold-mirror ebook-neon ebook-pulse" style="margin-top:0; width:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
-                    <div class="yellow-box" style="
-                      width:100%;
-                      border-radius:16px;
-                      padding:16px 14px;
-                      border:1px solid rgba(255,225,120,.65);
-                      background:
-                        linear-gradient(135deg, rgba(255,214,10,.95), rgba(255,241,173,.95)),
-                        rgba(255,255,255,.92);
-                      box-shadow:
-                        0 14px 28px rgba(0,0,0,.20),
-                        0 0 0 2px rgba(255,220,90,.18) inset,
-                        0 0 24px rgba(255,214,10,.12);
-                      color:#000000;
-                      font-weight:900;
-                      line-height:1.5;
-                      text-shadow: 0 1px 0 rgba(255,255,255,.35);
-                    ">
-                      <span style="display:block; font-size:18px; font-weight:1000; margin-bottom:6px;">
-                        Usa mi cupón de descuento <span style="color:#7a1cff;">PROEHN97</span>
-                      </span>
-                      <span style="display:block; font-size:14px; font-weight:800;">
+                  <div class="item gold-mirror ebook-neon ebook-pulse coupon-one-card coupon-elegant" style="margin-top:0;">
+                    <span class="coupon-spark s1"></span>
+                    <span class="coupon-spark s2"></span>
+
+                    <div class="coupon-one-badge">✦ Cupón exclusivo PRO EHN ✦</div>
+
+                    <div class="coupon-one-code">
+                      <span class="coupon-title">Usa mi cupón de descuento</span>
+                      <span class="coupon-big">PROEHN97</span>
+                      <span class="coupon-desc">
                         y adquiere un descuento en la compra de suplementos en la tienda en línea de Concepto One.
                       </span>
                     </div>
 
-                    <div style="display:flex; justify-content:center; margin-top:12px; width:100%;">
-                      <a class="btn plan-green plan-pulse"
-                         href="https://conceptoone.mx/collections/todos-los-productos-1"
-                         target="_blank" rel="noopener">
-                        IR A TIENDA CONCEPTO ONE
-                      </a>
-                    </div>
+                    <a class="btn concepto-one-btn plan-pulse"
+                       href="https://conceptoone.mx/collections/todos-los-productos-1"
+                       target="_blank" rel="noopener">
+                      IR A TIENDA CONCEPTO ONE
+                    </a>
 
-                    <p class="small" style="margin-top:10px; text-align:center">
+                    <p class="small coupon-one-note">
                       Aplica el cupón <strong>PROEHN97</strong> al finalizar tu compra.
                     </p>
                   </div>
@@ -2589,36 +3972,27 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
                 </div>
 
                 <div class="product-cta-side">
-                  <div class="item ebook-neon ebook-pulse" style="margin-top:0;">
-                    <div class="yellow-box" style="
-                      width:100%;
-                      border-radius:16px;
-                      padding:16px 14px;
-                      margin-bottom:12px;
-                      border:1px solid rgba(255,225,120,.65);
-                      background:
-                        linear-gradient(135deg, rgba(255,214,10,.95), rgba(255,241,173,.95)),
-                        rgba(255,255,255,.92);
-                      box-shadow:
-                        0 14px 28px rgba(0,0,0,.20),
-                        0 0 0 2px rgba(255,220,90,.18) inset,
-                        0 0 24px rgba(255,214,10,.12);
-                      color:#000000;
-                      font-weight:900;
-                      line-height:1.5;
-                      text-align:center;
-                    ">
-                      <span style="display:block; font-size:18px; font-weight:1000;">Obtén un descuento en tu primera inscripción mensual usando el código PROEHN50</span>
+                  <div class="item gold-mirror ebook-neon ebook-pulse coupon-one-card coupon-elegant wellogi-coupon-card" style="margin-top:0;">
+                    <span class="coupon-spark s1"></span>
+                    <span class="coupon-spark s2"></span>
+
+                    <div class="coupon-one-badge">✦ Beneficio educativo PRO EHN ✦</div>
+
+                    <div class="coupon-one-code">
+                      <span class="coupon-title">Obtén descuento en tu primera inscripción mensual</span>
+                      <span class="coupon-big">PROEHN50</span>
+                      <span class="coupon-desc">
+                        Accede a la sección de cursos y conoce la oferta educativa disponible en Wellogi.
+                      </span>
                     </div>
-                    <p class="ebook-price" style="text-align:center;">Accede a la sección de cursos y conoce la oferta educativa disponible en Wellogi.</p>
-                    <div style="display:flex; justify-content:center; margin-top:10px;">
-                      <a class="btn ebook"
-                         href="https://www.wellogi.com/cursos/"
-                         target="_blank" rel="noopener">
-                        IR A PLATAFORMA WELLOGI
-                      </a>
-                    </div>
-                    <p class="small" style="margin-top:10px; text-align:center">
+
+                    <a class="btn concepto-one-btn wellogi-btn plan-pulse"
+                       href="https://www.wellogi.com/cursos/"
+                       target="_blank" rel="noopener">
+                      IR A PLATAFORMA WELLOGI
+                    </a>
+
+                    <p class="small coupon-one-note">
                       Da clic en el botón para abrir la plataforma oficial de cursos de Wellogi.
                     </p>
                   </div>
