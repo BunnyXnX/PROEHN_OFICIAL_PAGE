@@ -5977,22 +5977,32 @@ details summary,
 
 /* === DIPLOMADO · MINIATURA EN LA BARRA DEL ACORDEÓN ===
    Solo se ve con el acordeón cerrado; al abrirse se oculta. */
-#diplomado .dip-thumb {
+#diplomado details.dip-accordion summary .dip-thumb {
   display: block;
-  flex: 0 0 auto;
-  width: 76px;
+  order: 1;
+  flex: 0 0 92px;
+  width: 92px;
   height: auto;
-  margin-left: auto;
+  margin: 0;
   border-radius: 12px;
   border: 1px solid rgba(243,223,155,.55);
   box-shadow: 0 8px 18px rgba(0,0,0,.35);
+}
+#diplomado details.dip-accordion summary .acc-left {
+  order: 2;
+  flex: 1 1 auto;
+}
+#diplomado details.dip-accordion summary .acc-arrow {
+  order: 3;
+  flex: 0 0 auto;
 }
 #diplomado details.dip-accordion[open] .dip-thumb {
   display: none;
 }
 @media (max-width: 520px) {
-  #diplomado .dip-thumb {
-    width: 54px;
+  #diplomado details.dip-accordion summary .dip-thumb {
+    flex-basis: 68px;
+    width: 68px;
     border-radius: 10px;
   }
 }
