@@ -6006,6 +6006,198 @@ details summary,
     border-radius: 10px;
   }
 }
+
+/* =========================================================
+   HUB PRODUCTOS Y OTROS RECURSOS — carrusel
+   ========================================================= */
+.productos-recursos-hub{position:relative;margin-top:28px}
+.productos-recursos-hub .section-title{margin-bottom:18px}
+.productos-recursos-hub .section-title p{max-width:760px;margin-left:auto;margin-right:auto}
+.prh-shell{display:grid;grid-template-columns:48px minmax(0,1fr) 48px;gap:12px;align-items:center}
+.prh-viewport{overflow:hidden;width:100%;padding:10px 2px 18px;outline:none;scroll-behavior:smooth}
+.prh-track{display:flex;gap:18px;will-change:transform;transition:transform .55s cubic-bezier(.22,.61,.36,1)}
+.prh-card{flex:0 0 calc((100% - 36px)/3);min-height:285px;box-sizing:border-box;padding:16px;border:1px solid rgba(255,215,120,.22);border-radius:20px;background:linear-gradient(145deg,rgba(25,16,39,.94),rgba(8,8,15,.98));box-shadow:0 16px 40px rgba(0,0,0,.32),inset 0 1px 0 rgba(255,255,255,.05);display:flex;flex-direction:column;justify-content:flex-end;text-decoration:none;color:inherit;position:relative;overflow:hidden;transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.prh-card::after{content:"";position:absolute;inset:auto -30% -45% -30%;height:150px;background:radial-gradient(circle,rgba(210,169,73,.16),transparent 68%);pointer-events:none}
+.prh-card:hover,.prh-card:focus-visible{transform:translateY(-6px);border-color:rgba(255,215,120,.58);box-shadow:0 22px 50px rgba(0,0,0,.42),0 0 26px rgba(210,169,73,.10);outline:none}
+.prh-visual{height:128px;border-radius:15px;border:1px dashed rgba(255,215,120,.34);display:grid;place-items:center;margin-bottom:14px;background:linear-gradient(135deg,rgba(255,215,120,.08),rgba(133,66,160,.10));font-size:34px;font-weight:900;letter-spacing:.08em;color:rgba(255,232,167,.86);text-shadow:0 0 18px rgba(255,215,120,.22)}
+.prh-kicker{font-size:10px;letter-spacing:.18em;font-weight:800;opacity:.68;margin-bottom:8px}
+.prh-card strong{font-size:14px;line-height:1.35;letter-spacing:.02em;position:relative;z-index:1}
+.prh-action{margin-top:14px;font-size:11px;font-weight:900;letter-spacing:.12em;color:#f1d37b;position:relative;z-index:1}
+.prh-nav{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,215,120,.38);background:rgba(12,10,18,.88);color:#f1d37b;font-size:32px;line-height:1;display:grid;place-items:center;cursor:pointer;transition:transform .2s ease,background .2s ease,border-color .2s ease;z-index:2}
+.prh-nav:hover,.prh-nav:focus-visible{transform:scale(1.08);background:rgba(255,215,120,.10);border-color:rgba(255,215,120,.7);outline:none}
+.prh-dots{display:flex;justify-content:center;gap:7px;margin-top:2px}
+.prh-dot{width:7px;height:7px;border-radius:50%;border:1px solid rgba(255,215,120,.45);background:transparent;padding:0;cursor:pointer;transition:transform .2s ease,background .2s ease}
+.prh-dot.is-active{transform:scale(1.45);background:#f1d37b}
+@media (max-width:900px){.prh-card{flex-basis:calc((100% - 18px)/2)}.prh-shell{grid-template-columns:42px minmax(0,1fr) 42px}.prh-track{gap:18px}}
+@media (max-width:620px){.prh-shell{grid-template-columns:38px minmax(0,1fr) 38px;gap:6px}.prh-card{flex-basis:100%;min-height:270px}.prh-visual{height:118px}.prh-nav{width:36px;height:36px;font-size:27px}.prh-viewport{padding-left:0;padding-right:0}.prh-card strong{font-size:13px}}
+@media (prefers-reduced-motion:reduce){.prh-track,.prh-card,.prh-nav,.prh-dot{transition:none}.prh-viewport{scroll-behavior:auto}}
+
+/* HUB PRO EHN · IMÁGENES, SLIDE TÁCTIL Y AUTOPLAY */
+.prh-viewport{touch-action:pan-y pinch-zoom;-webkit-overflow-scrolling:touch;user-select:none}
+.prh-track{cursor:grab}
+.prh-track.is-dragging{cursor:grabbing;transition:none}
+.prh-visual{position:relative;overflow:hidden;padding:0;background:#0c0a12;border-style:solid}
+.prh-image{display:block;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.02);transition:opacity .35s ease,transform .5s ease}
+.prh-image.is-loaded{opacity:1;transform:scale(1)}
+.prh-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(5,4,10,.48) 100%);pointer-events:none}
+.prh-card:hover .prh-image,.prh-card:focus-visible .prh-image{transform:scale(1.04)}
+.prh-card.is-active{border-color:rgba(255,215,120,.62);box-shadow:0 20px 48px rgba(0,0,0,.42),0 0 30px rgba(210,169,73,.12)}
+.prh-autoplay-note{font-size:10px;letter-spacing:.12em;text-align:center;margin-top:10px;opacity:.58;text-transform:uppercase}
+.servicios-recursos-completos{margin-top:34px}
+.servicios-completos-accordion summary{display:flex;align-items:center;gap:16px}
+.servicios-completos-body{padding:10px 0 4px}
+.servicios-completos-body > section{scroll-margin-top:90px}
+.servicios-completos-accordion[open] .servicios-completos-body{animation:serviciosReveal .45s ease both}
+@keyframes serviciosReveal{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+@media (max-width:620px){.prh-image{object-position:center}.prh-visual{height:118px}.servicios-completos-accordion summary{gap:10px}}
+@media (prefers-reduced-motion:reduce){.prh-image{transition:none}.servicios-completos-accordion[open] .servicios-completos-body{animation:none}}
+
+/* HUB PRO EHN: replica visual del acordeon de Formacion y CV. */
+.servicios-completos-wrap {
+  padding:20px !important;
+  border:1px solid rgba(214,170,59,.54) !important;
+  border-radius:22px !important;
+  background:linear-gradient(145deg,#fffefa 0%,#f4f2ed 100%) !important;
+  box-shadow:0 18px 42px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.95) !important;
+}
+details.accordion.servicios-completos-accordion {
+  border:1px solid rgba(25,30,38,.10) !important;
+  border-radius:17px !important;
+  background:rgba(245,244,241,.94) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.92),0 10px 24px rgba(14,12,8,.10) !important;
+  overflow:hidden;
+}
+details.accordion.servicios-completos-accordion summary {
+  color:#f8e7b1 !important;
+  text-shadow:0 10px 24px rgba(0,0,0,.45) !important;
+  padding:16px 18px !important;
+  min-height:66px;
+  border:1px solid rgba(214,170,59,.50) !important;
+  border-radius:16px !important;
+  background:linear-gradient(105deg,#1b2028 0%,#202024 55%,#624a17 100%) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 10px 24px rgba(0,0,0,.18) !important;
+}
+details.accordion.servicios-completos-accordion summary .acc-title {
+  color:#f8e7b1 !important;
+  text-shadow:0 10px 24px rgba(0,0,0,.45) !important;
+  font-weight:900;
+}
+details.accordion.servicios-completos-accordion summary .acc-sub { color:rgba(255,255,255,.76) !important; }
+details.accordion.servicios-completos-accordion summary .acc-arrow {
+  width:34px;
+  height:34px;
+  border:1px solid rgba(214,170,59,.55) !important;
+  background:rgba(214,170,59,.18) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08) !important;
+}
+details.accordion.servicios-completos-accordion summary .acc-arrow svg path { stroke:#f8e7b1 !important; }
+details.accordion.servicios-completos-accordion[open] summary { border-radius:16px 16px 0 0 !important; }
+details.accordion.servicios-completos-accordion > .servicios-completos-body {
+  padding:18px 14px 14px !important;
+  background:transparent !important;
+  border-top:1px solid rgba(25,30,38,.10) !important;
+  color:inherit !important;
+}
+@media (max-width:620px){
+  .servicios-completos-wrap{padding:12px !important;border-radius:18px !important;}
+  details.accordion.servicios-completos-accordion summary{padding:14px !important;}
+}
+
+/* Al desplegarse, este acordeon conserva su acabado oscuro anterior. */
+.servicios-completos-wrap:has(> details.servicios-completos-accordion[open]) {
+  padding:14px !important;
+  border-radius:18px !important;
+  background:linear-gradient(145deg,rgba(255,255,255,.105),rgba(255,240,184,.065) 45%,rgba(255,255,255,.035)),rgba(12,10,7,.70) !important;
+  border:1px solid rgba(255,240,184,.22) !important;
+  border-top-color:rgba(255,248,218,.42) !important;
+  border-left-color:rgba(214,170,59,.34) !important;
+  box-shadow:0 24px 68px rgba(0,0,0,.40),inset 0 1px 0 rgba(255,255,255,.10) !important;
+}
+details.accordion.servicios-completos-accordion[open] {
+  border:0 !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+}
+details.accordion.servicios-completos-accordion[open] summary {
+  color:#0b1220 !important;
+  text-shadow:none !important;
+  padding:14px !important;
+  min-height:64px;
+  border:1px solid rgba(41,121,255,.22) !important;
+  border-radius:22px !important;
+  background:rgba(255,255,255,.90) !important;
+  box-shadow:0 14px 34px rgba(0,0,0,.18) !important;
+}
+details.accordion.servicios-completos-accordion[open] summary .acc-title { color:#0b1220 !important; text-shadow:none !important; }
+details.accordion.servicios-completos-accordion[open] summary .acc-sub { color:rgba(11,18,32,.62) !important; }
+details.accordion.servicios-completos-accordion[open] summary .acc-arrow {
+  border:1px solid rgba(11,18,32,.14) !important;
+  background:rgba(255,255,255,.72) !important;
+  box-shadow:0 10px 20px rgba(0,0,0,.12) !important;
+}
+details.accordion.servicios-completos-accordion[open] summary .acc-arrow svg path { stroke:rgba(11,18,32,.88) !important; }
+details.accordion.servicios-completos-accordion[open] > .servicios-completos-body {
+  padding:10px 0 4px !important;
+  background:transparent !important;
+  border-top:0 !important;
+}
+
+/* Plataforma Wellogi: marco y superficie de la miniatura en blanco, como en su sección completa. */
+.prh-card[data-prh-target="plataforma-wellogi"] .prh-visual {
+  background:#fff !important;
+  border-color:rgba(84,145,192,.45) !important;
+  box-shadow:0 18px 42px rgba(0,0,0,.28), inset 0 0 0 1px rgba(84,145,192,.10) !important;
+}
+.prh-card[data-prh-target="plataforma-wellogi"] .prh-visual::after { content:none !important; display:none !important; }
+.prh-card[data-prh-target="plataforma-wellogi"] .prh-image {
+  object-fit:contain !important;
+  background:#fff !important;
+  opacity:1 !important;
+  transform:scale(.94);
+  mix-blend-mode:normal !important;
+}
+.prh-card[data-prh-target="plataforma-wellogi"]:hover .prh-image,
+.prh-card[data-prh-target="plataforma-wellogi"]:focus-visible .prh-image { transform:scale(.98); }
+
+/* Zoom ligero al pasar cursor o tocar una tarjeta. */
+.prh-card { transform-origin:center center; }
+.prh-card:hover, .prh-card:focus-visible { transform:translateY(-5px) scale(1.025) !important; }
+.prh-card:active { transform:translateY(-2px) scale(1.015) !important; }
+.prh-track.is-dragging .prh-card { transition:none !important; }
+@media (max-width:620px){ .prh-card:hover,.prh-card:focus-visible{transform:translateY(-3px) scale(1.018) !important;} }
+@media (prefers-reduced-motion:reduce){ .prh-card:hover,.prh-card:focus-visible,.prh-card:active{transform:none !important;} }
+
+/* Controles del carrusel: foco claro y objetivos tactiles comodos. */
+.prh-nav{min-width:44px;min-height:44px}
+.prh-nav:focus-visible,.prh-card:focus-visible,.prh-dot:focus-visible,.prh-toggle:focus-visible{outline:3px solid #fff0b7;outline-offset:3px}
+.prh-dot{width:28px;height:28px;border:0;position:relative;background:transparent;flex:0 0 28px}
+.prh-dot::after{content:"";position:absolute;width:8px;height:8px;border-radius:50%;border:1px solid rgba(255,215,120,.55);background:transparent;inset:50%;transform:translate(-50%,-50%);transition:transform .2s ease,background .2s ease}
+.prh-dot.is-active{transform:none;background:transparent}
+.prh-dot.is-active::after{transform:translate(-50%,-50%) scale(1.45);background:#f1d37b}
+.prh-toggle{display:block;margin:10px auto 0;min-height:44px;padding:8px 14px;border:1px solid rgba(255,215,120,.45);border-radius:8px;background:rgba(12,10,18,.88);color:#f1d37b;font:inherit;font-size:12px;font-weight:800;letter-spacing:.08em;cursor:pointer}
+.prh-toggle:hover{background:rgba(255,215,120,.12);border-color:rgba(255,215,120,.8)}
+.prh-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (max-width:620px){.prh-nav{width:44px;height:44px;font-size:27px}.prh-kicker,.prh-action{font-size:12px}.prh-card strong{font-size:14px}.prh-dots{gap:0}}
+
+/* HUB PRO EHN: catalogo visible en lugar de carrusel. */
+.productos-recursos-hub .prh-shell{display:block}
+.productos-recursos-hub .prh-viewport{overflow:visible;padding:10px 0 0}
+.productos-recursos-hub .prh-track{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:352px;gap:18px;transform:none !important;transition:none;will-change:auto;cursor:default}
+.productos-recursos-hub .prh-card{min-width:0;height:100%;min-height:0;flex:none;background:linear-gradient(145deg,#4a3567 0%,#332449 56%,#21182f 100%) !important;border-color:rgba(245,217,143,.34);box-shadow:0 16px 40px rgba(0,0,0,.32),inset 0 1px 0 rgba(255,255,255,.10)}
+.productos-recursos-hub .prh-visual{width:100%;height:150px;flex:0 0 150px;box-sizing:border-box}
+.productos-recursos-hub .prh-card strong{color:#fff9e8}
+.productos-recursos-hub .prh-kicker{color:#eadbff;opacity:.92}
+.productos-recursos-hub .prh-action{color:#ffe18a}
+.productos-recursos-hub .prh-nav,.productos-recursos-hub .prh-dots,.productos-recursos-hub .prh-autoplay-note,.productos-recursos-hub .prh-toggle{display:none !important}
+@media (max-width:900px){.productos-recursos-hub .prh-track{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.productos-recursos-hub .prh-track{grid-template-columns:1fr;grid-auto-rows:340px;gap:14px}.productos-recursos-hub .prh-visual{height:136px;flex-basis:136px}}
+
+/* Texto del hero y su ficha personal en blanco puro. */
+.hero-main > .kicker,.hero-main > p:not(.small),.hero-main > p:not(.small) strong,.hero-main .step-title,.hero-main .step-desc,.hero-main .step-num,.hero-side .ghost .big,.hero-side .ghost .sub,.hero-side .cap,.hero-side .mini .t,.hero-side .mini .v{color:#fff !important}
+.hero-main-title,.hero-main .step-title,.hero-main .step-desc,.hero-main .step-num{color:#fff !important;text-shadow:none !important;filter:none !important;background-image:none !important;-webkit-text-fill-color:#fff !important}
+.hero-main .step-num{background:rgba(255,255,255,.14) !important;border-color:rgba(255,255,255,.45) !important}
+
 </style>
 </head>
 <body>
@@ -6045,7 +6237,7 @@ details summary,
 <div class="hero">
 <div class="card hero-main gold-mirror">
 <div class="kicker"><span class="dot"></span> Pro Enhanced Nutrition · Planes alimenticios, programas de entrenamiento, esquema de suplementación (solo en los casos que la ameriten) y atención 100% personalizada</div>
-<h2 class="gold-stroke-outline">Entrenamiento + nutrición para ganar músculo, perder grasa y mejorar tu salud metabólica y hormonal.</h2>
+<h2 class="hero-main-title">Entrenamiento + nutrición para ganar músculo, perder grasa y mejorar tu salud metabólica y hormonal.</h2>
 <p>
           Enfoque directo, calculado y medible: <strong>evaluación → plan individualizado → seguimiento → ajustes</strong>.
           IDEAL SI ERES UNA PERSONA COMPROMETIDA, <strong>HONESTA CONSIGO MISMA Y GANAS DE TOMAR ACCIÓN SIN PRETEXTOS</strong>, responsable y lista para trabajar con estructura (sin “humo” ni recetas mágicas).
@@ -6065,19 +6257,19 @@ details summary,
 <p>Proceso simple · 4 pasos</p>
 </div>
 <div class="steps-grid">
-<div class="step-card gold-mirror">
+<div class="step-card">
 <div class="step-top"><div class="step-num">1</div><p class="step-title">EVALUACIÓN</p></div>
 <p class="step-desc">Recolectamos tus datos, hábitos, etc, objetivo y punto de partida para trabajar con precisión.</p>
 </div>
-<div class="step-card gold-mirror">
+<div class="step-card">
 <div class="step-top"><div class="step-num">2</div><p class="step-title">PLAN PERSONALIZADO</p></div>
 <p class="step-desc">Nutrición + entrenamiento con estructura, métricas y una estrategia realista para tu vida.</p>
 </div>
-<div class="step-card gold-mirror">
+<div class="step-card">
 <div class="step-top"><div class="step-num">3</div><p class="step-title">SEGUIMIENTO</p></div>
 <p class="step-desc">Revisamos progreso, adherencia y desempeño. Te guío para mantener consistencia.</p>
 </div>
-<div class="step-card gold-mirror">
+<div class="step-card">
 <div class="step-top"><div class="step-num">4</div><p class="step-title">AJUSTES Y RESULTADOS</p></div>
 <p class="step-desc">Ajustes finos según tu respuesta y PROGRESO: más control, menos improvisación, mejor resultado.</p>
 </div>
@@ -6092,11 +6284,10 @@ details summary,
 <div class="photo-meta">
 <div class="ghost">
 <div>
-<div class="big gold-stroke">Raúl Vargas · PRO EHN</div>
+<div class="big gold-stroke">Raúl Vargas Z. CEO de Pro Enhanced Nutrition.</div>
 <div class="sub">Atención personalizada · métricas · seguimiento</div>
 </div>
 </div>
-<div class="cap gold-mirror">PRO ENHANCED NUTRITION</div>
 </div>
 </div>
 <div class="mini gold-mirror">
@@ -6363,8 +6554,8 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
 </div>
 </div>
 </div>
-</section>
-<!-- PLANES -->
+</section><section aria-labelledby="productos-recursos-title" class="productos-recursos-hub" id="productos-recursos"><div class="section-title"><h3 class="gold-stroke-outline" id="productos-recursos-title"><span class="mark"></span> PRODUCTOS Y OTROS RECURSOS</h3><p>Explora las herramientas, servicios, contenidos y recursos de PRO Enhanced Nutrition</p></div><div class="prh-shell"><button aria-label="Recurso anterior" class="prh-nav prh-prev" type="button">‹</button><div aria-label="Carrusel de productos y otros recursos" class="prh-viewport" tabindex="0"><div class="prh-track"><a class="prh-card" data-prh-target="planes-asesoria" data-prh-image-alt="Plan para síndrome de ovario poliquístico y afecciones ginecológicas" href="#planes-asesoria"><span class="prh-visual"><img alt="" class="prh-image" loading="lazy"></span><span class="prh-kicker">SERVICIO</span><strong>PLANES DE ASESORÍA Y CONSULTA PERSONALIZADA</strong><span class="prh-action">EXPLORAR →</span></a><a class="prh-card" data-prh-target="youtube" data-prh-image-alt="Canal de YouTube PRO Enhanced Nutrition" href="#youtube"><span class="prh-visual"><img alt="" class="prh-image" loading="lazy"></span><span class="prh-kicker">CONTENIDO</span><strong>CANAL DE YOUTUBE</strong><span class="prh-action">EXPLORAR →</span></a><a class="prh-card" data-prh-target="comunidad" data-prh-image-alt="Grupo / Comunidad PRO EHN" href="#comunidad"><span class="prh-visual"><img alt="" class="prh-image" loading="lazy"></span><span class="prh-kicker">COMUNIDAD</span><strong>GRUPO / COMUNIDAD PRO EHN ENHANCERS</strong><span class="prh-action">EXPLORAR →</span></a><a class="prh-card" data-prh-target="podcast" data-prh-image-alt="Podcast PRO Enhanced Nutrition" href="#podcast"><span class="prh-visual"><img alt="" class="prh-image" loading="lazy"></span><span class="prh-kicker">AUDIO</span><strong>PODCAST PRO ENHANCED NUTRITION</strong><span class="prh-action">EXPLORAR →</span></a><a class="prh-card" data-prh-target="evaluador-salud-metabolica" data-prh-image-alt="Evaluador de salud metabólica y fenotipo de SOP" href="#evaluador-salud-metabolica"><span class="prh-visual"><img alt="" class="prh-image" loading="lazy"></span><span class="prh-kicker">HERRAMIENTA</span><strong>EVALUADOR DE SALUD METABÓLICA Y FENOTIPO DE SOP</strong><span class="prh-action">EXPLORAR →</span></a><a class="prh-card" data-prh-target="dietocalculo-salud-metabolica" data-prh-image-alt="DietoCalculo y Salud Metabólica — Raúl Vargas Zalazar" href="#dietocalculo-salud-metabolica"><span class="prh-visual"><img alt="" class="prh-image" loading="lazy"></span><span class="prh-kicker">HERRAMIENTA</span><strong>DIETOCALCULO Y SALUD METABÓLICA</strong><span class="prh-action">EXPLORAR →</span></a><a class="prh-card" data-prh-target="selector-suplementos-sop" data-prh-image-alt="Selector de suplementos según fenotipo de SOP y sinergias — Raúl Vargas Zalazar" href="#selector-suplementos-sop"><span class="prh-visual"><img alt="" class="prh-image" loading="lazy"></span><span class="prh-kicker">HERRAMIENTA</span><strong>SELECTOR DE SUPLEMENTOS SEGÚN FENOTIPO DE SOP Y SINERGIAS</strong><span class="prh-action">EXPLORAR →</span></a><a class="prh-card" data-prh-target="ebook-nutricion-salud-mental" data-prh-image-alt="E-BOOK Nutrición y Salud Mental — Raúl Vargas" href="#ebook-nutricion-salud-mental"><span class="prh-visual"><img alt="" class="prh-image" loading="lazy"></span><span class="prh-kicker">E-BOOK</span><strong>NUTRICIÓN Y SALUD MENTAL · AUTOR: RAÚL VARGAS</strong><span class="prh-action">EXPLORAR →</span></a><a class="prh-card" data-prh-target="ebook-fisiopatologia-sop" data-prh-image-alt="Guía de suplementación en el Síndrome de Ovario Poliquístico — Raúl Vargas Zalazar" href="#ebook-fisiopatologia-sop"><span class="prh-visual"><img alt="" class="prh-image" loading="lazy"></span><span class="prh-kicker">E-BOOK</span><strong>FISIOPATOLOGÍA DEL SOP Y GUÍA DE SUPLEMENTACIÓN · AUTOR: RAÚL VARGAS ZALAZAR</strong><span class="prh-action">EXPLORAR →</span></a><a class="prh-card" data-prh-target="concepto-one" data-prh-image-alt="Concepto One suplementos con cupón PROEHN97" href="#concepto-one"><span class="prh-visual"><img alt="" class="prh-image" loading="lazy"></span><span class="prh-kicker">BENEFICIO</span><strong>SUPLEMENTOS CON DESCUENTO EN CONCEPTO ONE</strong><span class="prh-action">EXPLORAR →</span></a><a class="prh-card" data-prh-target="plataforma-wellogi" data-prh-image-alt="Plataforma Wellogi" href="#plataforma-wellogi"><span class="prh-visual"><img alt="" class="prh-image" loading="lazy"></span><span class="prh-kicker">PLATAFORMA</span><strong>PLATAFORMA WELLOGI</strong><span class="prh-action">EXPLORAR →</span></a><a class="prh-card" data-prh-target="diplomado" data-prh-image-alt="Diplomado Internacional SOP y otras afecciones femeninas — Grupo VIP" href="#diplomado"><span class="prh-visual"><img alt="" class="prh-image" loading="lazy"></span><span class="prh-kicker">PRÓXIMAMENTE</span><strong>DIPLOMADO - PRÓXIMAMENTE</strong><span class="prh-action">EXPLORAR →</span></a></div></div><button aria-label="Siguiente recurso" class="prh-nav prh-next" type="button">›</button></div><div aria-label="Posición del carrusel" class="prh-dots" role="tablist"></div><p class="prh-autoplay-note">Desliza con el dedo, usa las flechas o deja que el carrusel avance solo</p></section>
+<section aria-labelledby="servicios-recursos-completos-title" class="servicios-recursos-completos" id="servicios-recursos-completos"><div class="section-title"><h3 class="gold-stroke-outline" id="servicios-recursos-completos-title"><span class="mark"></span> Sección completa de Servicios, recursos y herramientas2</h3><p>Despliega este panel para consultar todas las secciones completas disponibles en PRO Enhanced Nutrition.</p></div><div class="acc-wrap servicios-completos-wrap"><details class="accordion servicios-completos-accordion" id="servicios-completos-acordeon"><summary><div class="acc-left"><div class="acc-title">Abrir sección completa de Servicios, recursos y herramientas2</div><div class="acc-sub">Toca aquí para desplegar todas las secciones</div></div><div aria-hidden="true" class="acc-arrow"><svg fill="none" height="18" viewbox="0 0 24 24" width="18"><path d="M7 10l5 5 5-5" stroke="rgba(11,18,32,.88)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg></div></summary><div class="servicios-completos-body"><!-- PLANES -->
 <section id="planes-asesoria">
 <div class="section-title">
 <h3 class="gold-stroke-outline"><span class="mark"></span> PLANES DE ASESORÍA Y CONSULTA PERSONALIZADA</h3>
@@ -6534,7 +6725,7 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
 <div class="card span-12 gold-mirror">
 <div style="padding:20px">
 <!-- Producto 1 -->
-<div class="item gold-mirror">
+<div class="item gold-mirror" id="evaluador-salud-metabolica">
 <h4 class="gold-stroke" style="margin:0 0 10px; text-transform:uppercase;">
                 EVALUADOR DE SALUD METABÓLICA Y FENOTIPO DE SÍNDROME DE OVARIO POLIQUÍSTICO
               </h4>
@@ -6577,7 +6768,7 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
 </div>
 </div>
 <!-- Producto 2 - DietoCalculo y Salud Metabólica -->
-<div class="item gold-mirror" style="margin-top:14px;">
+<div class="item gold-mirror" id="dietocalculo-salud-metabolica" style="margin-top:14px;">
 <h4 class="gold-stroke" style="margin:0 0 10px; text-transform:uppercase;">
                 DIETOCALCULO Y SALUD METABÓLICA
               </h4>
@@ -6622,7 +6813,7 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
 </div>
 <!-- /Producto 2 DietoCalculo -->
 <!-- Producto 4 - Selector de suplementos SOP -->
-<div class="item gold-mirror" style="margin-top:14px">
+<div class="item gold-mirror" id="selector-suplementos-sop" style="margin-top:14px">
 <h4 class="gold-stroke" style="margin:0 0 10px; text-transform:uppercase;">
                 SELECTOR DE SUPLEMENTOS SEGÚN FENOTIPO DE SOP Y SINERGIAS
               </h4>
@@ -6666,7 +6857,7 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
 </div>
 <!-- /Producto 4 -->
 <!-- Producto 2 -->
-<div class="item gold-mirror" style="margin-top:14px">
+<div class="item gold-mirror" id="ebook-nutricion-salud-mental" style="margin-top:14px">
 <h4 class="gold-stroke" style="margin:0 0 10px; text-transform:uppercase;">
                 E-BOOK (LIBRO DIGITAL) NUTRICIÓN Y SALUD MENTAL, AUTOR; RAÚL VARGAS
               </h4>
@@ -6709,7 +6900,7 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
 </div>
 </div>
 <!-- ✅ Producto NUEVO (EBOOK SOP Suplementación) -->
-<div class="item gold-mirror" style="margin-top:14px">
+<div class="item gold-mirror" id="ebook-fisiopatologia-sop" style="margin-top:14px">
 <h4 class="gold-stroke" style="margin:0 0 10px; text-transform:uppercase;">
                 E-BOOK (LIBRO DIGITAL) FISIOPATOLOGÍA DEL SÍNDROME DE OVARIO POLIQUÍSTICO Y GUÍA DE SUPLEMENTACIÓN, AUTOR: RAÚL VARGAS ZALAZAR
               </h4>
@@ -6753,7 +6944,7 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
 </div>
 <!-- /Producto NUEVO -->
 <!-- Producto 3 - Concepto One -->
-<div class="item gold-mirror" style="margin-top:14px">
+<div class="item gold-mirror" id="concepto-one-suplementos" style="margin-top:14px">
 <h4 class="gold-stroke" style="margin:0 0 10px; text-transform:uppercase;">
                 SUPLEMENTOS CON DESCUENTO EN CONCEPTO ONE
               </h4>
@@ -6764,7 +6955,7 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
 </div>
 </div>
 <div class="product-cta-side">
-<div class="item gold-mirror ebook-neon coupon-one-card coupon-elegant" style="margin-top:0;">
+<div class="item gold-mirror ebook-neon coupon-one-card coupon-elegant" id="concepto-one" style="margin-top:0;">
 <span class="coupon-spark s1"></span>
 <span class="coupon-spark s2"></span>
 <div class="coupon-one-badge">✦ Cupón exclusivo PRO EHN ✦</div>
@@ -6874,7 +7065,7 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
 <a aria-label="Abrir Instagram profesional de Raúl Vargas" class="diploma-social-btn instagram" href="https://www.instagram.com/raulvargas_proehn/" rel="noopener" target="_blank">
 <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm10.35 1.55a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Z"></path></svg>
 <span>Instagram · @raulvargas_proehn
-</a>
+</span></a>
 <a aria-label="Abrir Facebook profesional de Raúl Vargas" class="diploma-social-btn facebook" href="https://www.facebook.com/profile.php?id=61589476314776" rel="noopener" target="_blank">
 <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.2 8.5V6.8c0-.7.5-.9.9-.9h2.6V2.1L14.4 2C10.7 2 9.9 4.8 9.9 6.5v2H7v4.3h2.9V22h4.3v-9.2h3.2l.5-4.3h-3.7Z"></path></svg>
 <span>Facebook profesional</span>
@@ -7034,6 +7225,7 @@ Con 25 horas de duración, acreditado por Salud y nutrición con ciencia a. C.  
 </div><!-- /card -->
 </div><!-- /grid -->
 </section>
+</div></details></div></section>
 <section id="pago">
 <div class="section-title">
 <h3 class="gold-stroke-outline"><span class="mark"></span> FORMA DE PAGO PARA CONSULTA PRIVADA</h3>
@@ -7233,6 +7425,184 @@ ${msg}`
       openIfHash();
       window.addEventListener("hashchange", openIfHash);
     })();
-  </script>
+  
+
+/* HUB PRODUCTOS Y OTROS RECURSOS — un solo controlador accesible */
+(function(){
+const root=document.getElementById('productos-recursos');
+if(!root)return;
+const viewport=root.querySelector('.prh-viewport');
+const track=root.querySelector('.prh-track');
+const cards=[...root.querySelectorAll('.prh-card')];
+const prev=root.querySelector('.prh-prev');
+const next=root.querySelector('.prh-next');
+const dots=root.querySelector('.prh-dots');
+if(!viewport||!track||!cards.length)return;
+
+/* El grid conserva los enlaces de cada tarjeta, sin temporizador ni arrastre. */
+if(root.dataset.layout!=='carousel'){
+  track.setAttribute('role','list');
+  cards.forEach(card=>card.setAttribute('role','listitem'));
+
+  const sourceFor=alt=>[...document.images].find(img=>img.alt===alt&&!img.classList.contains('prh-image'));
+  cards.forEach(card=>{
+    const image=card.querySelector('.prh-image');
+    const source=sourceFor(card.dataset.prhImageAlt);
+    if(!image||!source)return;
+    image.src=source.currentSrc||source.src;
+    image.alt=card.dataset.prhImageAlt;
+    if(image.complete)image.classList.add('is-loaded');
+    else image.addEventListener('load',()=>image.classList.add('is-loaded'),{once:true});
+  });
+
+  function openTarget(id){
+    const target=document.getElementById(id);
+    const accordion=document.getElementById('servicios-completos-acordeon');
+    if(!target)return;
+    if(accordion&&accordion.contains(target))accordion.open=true;
+    setTimeout(()=>{
+      target.setAttribute('tabindex','-1');
+      target.focus({preventScroll:true});
+      target.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+    },60);
+  }
+
+  cards.forEach(card=>card.addEventListener('click',event=>{
+    event.preventDefault();
+    openTarget(card.dataset.prhTarget);
+  }));
+  window.addEventListener('hashchange',()=>{
+    const id=location.hash.slice(1);
+    if(id)openTarget(id);
+  });
+  if(location.hash)openTarget(location.hash.slice(1));
+  return;
+}
+
+track.id='prh-track';
+track.setAttribute('role','list');
+cards.forEach(card=>card.setAttribute('role','listitem'));
+viewport.setAttribute('aria-roledescription','carrusel');
+prev.setAttribute('aria-controls',track.id);
+next.setAttribute('aria-controls',track.id);
+
+const toggle=document.createElement('button');
+toggle.type='button';
+toggle.className='prh-toggle';
+toggle.textContent='Pausar carrusel';
+toggle.setAttribute('aria-pressed','false');
+root.querySelector('.prh-autoplay-note').insertAdjacentElement('afterend',toggle);
+const status=document.createElement('p');
+status.className='prh-status';
+status.setAttribute('aria-live','polite');
+root.appendChild(status);
+
+const sourceFor=alt=>[...document.images].find(img=>img.alt===alt&&!img.classList.contains('prh-image'));
+cards.forEach(card=>{
+  const image=card.querySelector('.prh-image');
+  const source=sourceFor(card.dataset.prhImageAlt);
+  if(!image||!source)return;
+  image.src=source.currentSrc||source.src;
+  image.alt=card.dataset.prhImageAlt;
+  if(image.complete)image.classList.add('is-loaded');
+  else image.addEventListener('load',()=>image.classList.add('is-loaded'),{once:true});
+});
+
+let index=0,visible=3,timer=null,startX=0,lastX=0,dragging=false,moved=false;
+let pausedByUser=false,hovering=false,focused=false;
+const gap=18;
+const reducedMotion=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
+const calc=()=>{visible=innerWidth<=620?1:innerWidth<=900?2:3;};
+const max=()=>Math.max(0,cards.length-visible);
+const step=()=>((viewport.clientWidth-(visible-1)*gap)/visible)+gap;
+
+function announce(){status.textContent=`Mostrando recursos ${index+1} a ${Math.min(index+visible,cards.length)} de ${cards.length}.`;}
+function render(animated=true,shouldAnnounce=false){
+  calc(); index=Math.min(index,max());
+  track.style.transition=animated?'transform .55s cubic-bezier(.22,.61,.36,1)':'none';
+  track.style.transform=`translate3d(${-index*step()}px,0,0)`;
+  cards.forEach((card,cardIndex)=>card.classList.toggle('is-active',cardIndex>=index&&cardIndex<index+visible));
+  dots.replaceChildren();
+  for(let dotIndex=0;dotIndex<=max();dotIndex++){
+    const dot=document.createElement('button');
+    dot.type='button'; dot.className=`prh-dot${dotIndex===index?' is-active':''}`;
+    dot.setAttribute('aria-label',`Ir a recursos ${dotIndex+1} a ${Math.min(dotIndex+visible,cards.length)} de ${cards.length}`);
+    if(dotIndex===index)dot.setAttribute('aria-current','true');
+    dot.addEventListener('click',()=>{index=dotIndex;render(true,true);restart();});
+    dots.appendChild(dot);
+  }
+  const unavailable=max()===0;
+  prev.disabled=unavailable; next.disabled=unavailable;
+  if(shouldAnnounce)announce();
+}
+function stop(){clearInterval(timer);timer=null;}
+function start(){
+  stop();
+  if(pausedByUser||hovering||focused||reducedMotion||max()===0)return;
+  timer=setInterval(()=>{index=index>=max()?0:index+1;render();},5200);
+}
+function restart(){start();}
+function go(direction){index+=direction;if(index>max())index=0;if(index<0)index=max();render(true,true);}
+function setPaused(paused){
+  pausedByUser=paused;
+  toggle.textContent=paused?'Reanudar carrusel':'Pausar carrusel';
+  toggle.setAttribute('aria-pressed',String(paused));
+  paused?stop():start();
+}
+function openTarget(id){
+  const target=document.getElementById(id);
+  const accordion=document.getElementById('servicios-completos-acordeon');
+  if(!target)return;
+  if(accordion&&accordion.contains(target))accordion.open=true;
+  setTimeout(()=>{
+    target.setAttribute('tabindex','-1');
+    target.focus({preventScroll:true});
+    target.scrollIntoView({behavior:reducedMotion()?'auto':'smooth',block:'start'});
+  },60);
+}
+
+prev.addEventListener('click',()=>{go(-1);restart();});
+next.addEventListener('click',()=>{go(1);restart();});
+toggle.addEventListener('click',()=>setPaused(!pausedByUser));
+viewport.addEventListener('keydown',event=>{
+  if(event.key!=='ArrowLeft'&&event.key!=='ArrowRight')return;
+  event.preventDefault(); go(event.key==='ArrowRight'?1:-1); restart();
+});
+root.addEventListener('pointerenter',()=>{hovering=true;stop();});
+root.addEventListener('pointerleave',()=>{hovering=false;start();});
+root.addEventListener('focusin',()=>{focused=true;stop();});
+root.addEventListener('focusout',()=>{setTimeout(()=>{focused=root.contains(document.activeElement);start();},0);});
+viewport.addEventListener('pointerdown',event=>{
+  if(event.pointerType==='mouse'&&event.button!==0)return;
+  dragging=true;moved=false;startX=lastX=event.clientX;track.classList.add('is-dragging');
+  viewport.setPointerCapture?.(event.pointerId);stop();
+});
+viewport.addEventListener('pointermove',event=>{
+  if(!dragging)return;
+  lastX=event.clientX;const distance=lastX-startX;
+  if(Math.abs(distance)>8)moved=true;
+  track.style.transform=`translate3d(${-index*step()+distance}px,0,0)`;
+});
+function endDrag(){
+  if(!dragging)return;
+  dragging=false;track.classList.remove('is-dragging');
+  const distance=lastX-startX;
+  if(Math.abs(distance)>45)index+=distance<0?1:-1;
+  if(index>max())index=max();if(index<0)index=0;
+  render();start();
+}
+viewport.addEventListener('pointerup',endDrag);
+viewport.addEventListener('pointercancel',endDrag);
+cards.forEach(card=>card.addEventListener('click',event=>{
+  event.preventDefault();
+  if(moved){moved=false;return;}
+  openTarget(card.dataset.prhTarget);
+}));
+window.addEventListener('resize',()=>{render(false);start();});
+window.addEventListener('hashchange',()=>{const id=location.hash.slice(1);if(id)openTarget(id);});
+render(false);start();
+if(location.hash)openTarget(location.hash.slice(1));
+})();
+</script>
 </body>
 </html>
